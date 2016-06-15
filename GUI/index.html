@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="boxstyles.css">
+ <link rel="stylesheet" href="jquery-ui.css">
+ <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+ <script type="text/javascript" src="flotr2.min.js"></script>
+ <script src="jquery-ui.min.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+	<div id="Banner"><p id="BannerT">MARQ Drone</p></div>
+	
+	<div class="Navs">
+		<button id="Console" class="NavButton" style="margin-left:10pt">Console</button>
+		<button id="Counter" class="NavButton">Counter</button>
+		<button id="CubeB" class="NavButton">Cube</button>
+		<button id="IMUB" class="NavButton">IMU</button>
+		<button id="MotorB" class="NavButton">Motors</button>
+		<button id="JoysticksB" class="NavButton">Joysticks</button>
+		<button id="MetaDataB" class="NavButton">Meta</button>
+		<p style="text-align:right;padding-right:10pt"><a href="http://www.marquette.edu">www.marquette.edu</a></p>
+	</div>
+	
+	<div id="IMU_Nav" class="Nav">
+		<button id="AccCubeB" class="NavButton">AccCube</button>
+		<button id="AccPlotB" class="NavButton">AccPlot</button>
+		<button id="GyroCubeB" class="NavButton">GyroCube</button>
+		<button id="GyroPlotB" class="NavButton">GyroPlot</button>
+		<button id="MagCubeB" class="NavButton">MagCube</button>
+		<button id="MagPlotB" class="NavButton">MagPlot</button>
+		<button id="KCubeB" class="NavButton">FusionCube</button>
+		<button id="KPlotB" class="NavButton">FusionPlot</button>	
+	</div>
+
+	<div id="Bodys">
+	<br>
+	</div>
+
+	<div id="Content" style="margin-left:5pt">
+	
+		<div id="jPractice" class="containerBox">
+			<div class="titleB">COM Port:</div>
+			<button id="plus" class="MyButton">+</button>
+			<button id="minus" class="MyButton">-</button>
+			<button id="reset" class="MyButton">Reset</button><br>
+			<button id="startT" class="MyButton">Start Timer</button>
+			<p id="num"></p>
+		</div>
+		
+		<div id="serialComs" class="ui-widget-content containerBox" >
+			<div class="titleB">COM Port:</div>
+			<p id="num"></p>
+			<select id="portPath" class="MyButton" ></select>
+			<button id="connect" class="MyButton">Connect</button>
+			<button id="sendData" class="MyButton">Start Timer</button>
+			<textarea id="baudRates" class="MyButton" >115200</textarea>
+			<br>
+			<div style="clear:both; float:left; margin:0px;">
+			<input type="checkbox" id="logSerialCheck">Log Serial</input>
+			<input type="checkbox" id="pWrite">Test Write</input>
+			</div><br> 
+			<textarea id="textBox"></textarea>
+			<!--<div style="z-index: 90;" class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se"></div> -->
+			
+		</div>
+
+		<div id="FullCube" class="containerBox" style="width:400px">
+			<div class="titleB">IMU Cube</div>
+			<section class="container">
+			<div id="cube" class="show-front">
+			  <figure class="front">1</figure>
+			  <figure class="back">2</figure>
+			  <figure class="right">3</figure>
+			  <figure class="left">4</figure>
+			  <figure class="top">5</figure>
+			  <figure class="bottom">6</figure>
+			</div>
+			</section>
+
+			<div id="mySliders">
+			Pitch: <input type="range" id="sl1" value="0" max="360" min="0" name="slider1" ></input> <span id=s1>0</span> deg <br>
+			Yaw: <input type="range" id="sl2" value="0" max="360" min="0" name="slider2" ></input> <span id=s2>0</span> deg <br>
+			Roll: <input type="range" id="sl3" value="0" max="360" min="0" name="slider3" ></input> <span id=s3>0</span> deg <br>
+			</div>
+		</div>
+
+		<div id="AccCube" class="containerBox" style="width:400px">
+			<div class="titleB">Acc Cube</div>
+			<section class="container">
+			<div id="AccV" class="show-front">
+			  <figure class="front">1</figure>
+			  <figure class="back">2</figure>
+			  <figure class="right">3</figure>
+			  <figure class="left">4</figure>
+			  <figure class="top">5</figure>
+			  <figure class="bottom">6</figure>
+			</div>
+			</section>
+		</div>
+
+		<div id="AccPlot" class="containerBox ui-widget-content">
+			<div class="titleB">Acc Plot:</div>
+			<div id="myPlot" class="myPlots"></div>
+		</div>
+		
+		<div id="GyroCube" class="containerBox" style="width:400px">
+			<div class="titleB">Gyro Cube</div>
+			<section class="container">
+			<div id="GyroV" class="show-front">
+			  <figure class="front">1</figure>
+			  <figure class="back">2</figure>
+			  <figure class="right">3</figure>
+			  <figure class="left">4</figure>
+			  <figure class="top">5</figure>
+			  <figure class="bottom">6</figure>
+			</div>
+			</section>
+		</div>
+		
+		<div id="GyroPlot" class="containerBox ui-widget-content">
+			<div class="titleB">Gyro Plot:</div>
+			<div id="gyroP" class="myPlots"></div>
+		</div>
+		
+		<div id="MagCube" class="containerBox" style="width:400px">
+			<div class="titleB">Magnetometer Cube</div>
+			<section class="container">
+			<div id="MagV" class="show-front">
+			  <figure class="front">1</figure>
+			  <figure class="back">2</figure>
+			  <figure class="right">3</figure>
+			  <figure class="left">4</figure>
+			  <figure class="top">5</figure>
+			  <figure class="bottom">6</figure>
+			</div>
+			</section>
+		</div>
+		
+		<div id="MagPlot" class="containerBox">
+			<div id="magTitle" class="titleB">Magnetometer Plot:</div>
+			<div id="magP" class="myPlots"></div>
+		</div>
+		
+		<div id="KCube" class="containerBox" style="width:400px">
+			<div class="titleB">Fusion Cube</div>
+			<section class="container">
+			<div id="KV" class="show-front">
+			  <figure class="front">1</figure>
+			  <figure class="back">2</figure>
+			  <figure class="right">3</figure>
+			  <figure class="left">4</figure>
+			  <figure class="top">5</figure>
+			  <figure class="bottom">6</figure>
+			</div>
+			</section>
+		</div>
+		
+		<div id="KPlot" class="containerBox ui-widget-content">
+			<div class="titleB">Fusion Plot:</div>
+			<div id="kP" class="myPlots"></div>
+		</div>	
+		
+		<div id="MotorPlot" class="ui-widget-content containerBox">
+			<div id="motorTitle" class="titleB">Speed:</div>
+			<div id="motorP" class="myPlots"></div>
+		</div>
+
+		<div id="Joysticks" class="containerBox">
+			<div class="titleB">Remote Values:</div>
+			<div id="remoteValueDiv">
+			Throttle: <span id="Throttle_Text">0</span><br>
+			Yaw: <span id="Yaw_Text">0</span><br>
+			Roll: <span id="Roll_Text">0</span><br>
+			Pitch<span id="Pitch_Text">0</span><br>
+			</div>
+			<section class="stickContainer">
+			<div class="stickGrid">
+			<figure id="LeftStick" class="StickFig"></figure>
+			</div>
+			</section>
+			
+			<section class="stickContainer">
+			<div class="stickGrid">
+			<figure id="RightStick" class="StickFig"></figure>
+			</div>
+			</section>
+			
+			<button id="calMid" class="MyButton">Calibrate Midpoint</button>
+			<button id="calMin" class="MyButton">Calibrate Min/Max</button>
+			<button id="saveS" class="MyButton">Save Settings</button>
+		</div>	
+		
+		<div id="Motor" class="containerBox">
+			<div class="titleB">Motor Control</div>
+			<div id="sliderbox" style="margin:10pt;">
+				S0: <input type="range" id="M0" value="0" max="1000" min="0" class="M_Slider" ></input> <span id="M0_T">0</span> (0-1000) <br>
+				S1: <input type="range" id="M1" value="0" max="1000" min="0" class="M_Slider" ></input> <span id="M1_T">0</span> (0-1000) <br>
+				S2: <input type="range" id="M2" value="0" max="1000" min="0" class="M_Slider" ></input> <span id="M2_T">0</span> (0-1000) <br>
+				S3: <input type="range" id="M3" value="0" max="1000" min="0" class="M_Slider" ></input> <span id="M3_T">0</span> (0-1000) <br>
+				AL: <input type="range" id="M_ALL" value="0" max="1000" min="0" class="M_Slider" ></input> <span id="M_ALL_T">0</span> (0-1000) <br>
+				<input type="checkbox" id="manualMotorSpeed">Manual Motor Speed Enable</input>
+			</div>
+		</div>		
+		
+		<div id="MetaData" class="containerBox">
+			<div class="titleB">Meta Data</div>
+			<div style="margin:10pt; float:left;">
+			Device: <br>
+			RF Packet Reception Rate:<br>
+			Remote Flight State: <br>
+			Quad Flight State: <br>
+			Remote CPU Usage %: <br>
+			Pitch P Gain: <br>
+			Pitch I Gain: <br>
+			Pitch D Gain: <br>
+			Roll P Gain: <br>
+			Roll I Gain: <br>
+			Roll D Gain: <br>
+			Yaw P Gain <br>
+			Yaw I Gain <br>
+			Yaw D Gain <br>
+			</div>
+			
+			<div style="margin:10pt; float:left;">
+			<span class="metaDataText" id="Device_Text">Null</span><br>
+			<span class="metaDataText" id="Packet_Rate_Text">Null</span><br>
+			<span class="metaDataText" id="R_State_Text">Null</span><br>
+			<span class="metaDataText" id="Quad_State_Text">Null</span><br>
+			<span class="metaDataText" id="CPU_Text">Null</span><br>
+			
+			<span class="metaDataText" id="PITCH_P">Null</span><br>
+			<span class="metaDataText" id="PITCH_I">Null</span><br>
+			<span class="metaDataText" id="PITCH_D">Null</span><br>
+			<span class="metaDataText" id="ROLL_P">Null</span><br>
+			<span class="metaDataText" id="ROLL_I">Null</span><br>
+			<span class="metaDataText" id="ROLL_D">Null</span><br>
+			<span class="metaDataText" id="YAW_P">Null</span><br>
+			<span class="metaDataText" id="YAW_I">Null</span><br>
+			<span class="metaDataText" id="YAW_D">Null</span><br>
+			</div>
+			
+		</div>		
+
+		<div id="PIDGains" class="containerBox">
+			<div class="titleB">PID Gains</div>
+			
+			<div style="margin:10pt; float:left;">
+			Pitch P:<br><br>
+			Pitch I:<br><br>
+			Pitch D:<br><br>
+			Roll P:<br><br>
+			Roll I:<br><br>
+			Roll D:<br><br><br>
+			Yaw  P:<br><br>
+			Yaw  I:<br><br>
+			Yaw  D:<br><br>
+			</div>
+			
+			<div style="margin:10pt; float:left;">
+			<input type="range" id="PID_PP_S" value="0" max="1000" min="-1000" class="PID_Slider" ></input> <span id="PID_PP_T">0</span><br>
+			<input type="range" id="PID_PI_S" value="0"  max="1000" min="-1000" class="PID_Slider" ></input> <span id="PID_PI_T">0</span><br>
+			<input type="range" id="PID_PD_S" value="0"  max="1000" min="-1000" class="PID_Slider" ></input> <span id="PID_PD_T">0</span><br><br>
+			<input type="range" id="PID_RP_S" value="0" max="1000" min="-1000" class="PID_Slider" ></input> <span id="PID_RP_T">0</span><br>
+			<input type="range" id="PID_RI_S" value="0"  max="1000" min="-1000" class="PID_Slider" ></input> <span id="PID_RI_T">0</span><br>
+			<input type="range" id="PID_RD_S" value="0"  max="1000" min="-1000" class="PID_Slider" ></input> <span id="PID_RD_T">0</span><br><br>
+			<input type="range" id="PID_YP_S" value="0"  max="1000" min="-1000" class="PID_Slider" ></input> <span id="PID_YP_T">0</span><br>
+			<input type="range" id="PID_YI_S" value="0"  max="1000" min="-1000" class="PID_Slider" ></input> <span id="PID_YI_T">0</span><br>
+			<input type="range" id="PID_YD_S" value="0"  max="1000" min="-1000" class="PID_Slider" ></input> <span id="PID_YD_T">0</span><br>
+			<br>
+			<input type="checkbox" id="transferPID">Transfer PID Gains</input>
+			</div>
+		</div>		
+		
+		
+		<div id="fileSystemTest" class="containerBox">
+			<div class="titleB">File System Testing</div>
+			
+			<div style = "margin:10pt"> 
+			
+				<button id="choose_file">Choose File</button>
+				<button id="choose_dir">Choose Directory</button>
+				Path: <input type="text" id="file_path" readonly>
+				<span>Size: <span id="file_size"></span> bytes</span>
+				<p><button id="save_file" disabled>Save As</button></p>
+				<button id="save_filef">Save</button>
+			
+			</div>
+
+		</div>		
+		
+		
+		<div class="push"></div>
+
+	</div>
+
+	<script src="file.js"></script>
+	<script src="myScript.js"></script>
+	<script src="remote.js"></script>
+	<script src="motor.js"></script>
+	<script src="serial.js"></script> 
+	<script src="plot.js"></script> 
+	<script src="navigation.js"></script>
+	<script src="pid.js"></script>
+	<script src="commands.js"></script>
+	
+	
+
+</div>
+
+<div class="footer">
+<p id="footerText" style="padding-left:10pt">
+App Author(s): Nate Zimmerman<br>
+Contact information: nate dot m dot zimmerman at gmail V11</p> 
+</div>
+
+</body>
+
+
+<footer>
+
+</footer> 
+
+
+
+</html>

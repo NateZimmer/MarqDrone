@@ -1,0 +1,20 @@
+Added Component: Designator=R6(1608[0603]TRI)
+Added Component: Designator=R7(1608[0603]TRI)
+Added Component: Designator=R8(1608[0603]TRI)
+Added Component: Designator=R9(1608[0603]TRI)
+Added Pin To Net: NetName=SCL Pin=R6-1
+Added Pin To Net: NetName=NetP9_1 Pin=R6-2
+Added Pin To Net: NetName=PWM_CH1 Pin=R6-3
+Added Pin To Net: NetName=PWM_CH0 Pin=R7-1
+Added Pin To Net: NetName=NetP9_2 Pin=R7-2
+Added Pin To Net: NetName=SCL Pin=R7-3
+Added Pin To Net: NetName=SCL Pin=R8-1
+Added Pin To Net: NetName=NetP10_1 Pin=R8-2
+Added Pin To Net: NetName=PWM_CH2 Pin=R8-3
+Added Pin To Net: NetName=PWM_CH3 Pin=R9-1
+Added Pin To Net: NetName=NetP10_2 Pin=R9-2
+Added Pin To Net: NetName=SCL Pin=R9-3
+Added Member To Class: ClassName=Flight_Controller2 Member=Component R6 PVZ3A103C01B00
+Added Member To Class: ClassName=Flight_Controller2 Member=Component R7 PVZ3A103C01B00
+Added Member To Class: ClassName=Flight_Controller2 Member=Component R8 PVZ3A103C01B00
+Added Member To Class: ClassName=Flight_Controller2 Member=Component R9 PVZ3A103C01B00

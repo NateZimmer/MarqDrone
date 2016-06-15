@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=VIN Pin=P3-1
+Removed Pin From Net: NetName=VIN Pin=P3-1
+Removed Pin From Net: NetName=VIN Pin=P3-1
+Removed Pin From Net: NetName=VIN Pin=P3-1
+Removed Pin From Net: NetName=VIN Pin=P3-1
+Removed Pin From Net: NetName=GND Pin=P7-1
+Removed Pin From Net: NetName=GND Pin=P7-1
+Removed Pin From Net: NetName=GND Pin=P7-1
+Removed Pin From Net: NetName=GND Pin=P7-1
+Removed Pin From Net: NetName=GND Pin=P7-1
+Removed Member From Class: ClassName=ESC3 Member=P3
+Removed Member From Class: ClassName=ESC3 Member=P7

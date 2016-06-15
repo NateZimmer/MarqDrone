@@ -1,0 +1,109 @@
+Change Component Designator: OldDesignator=Y1 NewDesignator=Y2
+Added Component: Designator=C1(1608[0603])
+Added Component: Designator=C10(1608[0603]C)
+Added Component: Designator=C12(1608[0603]C)
+Added Component: Designator=C13(1608[0603]C)
+Added Component: Designator=C14(1608[0603]C)
+Added Component: Designator=C15(1608[0603]C)
+Added Component: Designator=C16(1608[0603]C)
+Added Component: Designator=C17(1608[0603]C)
+Added Component: Designator=C18(1608[0603]C)
+Added Component: Designator=C22(1608[0603]C)
+Added Component: Designator=C26(1608[0603]C)
+Added Component: Designator=C27(1608[0603]C)
+Added Component: Designator=F1(Balun)
+Added Component: Designator=L4(1608[0603]L)
+Added Component: Designator=P1(SMA)
+Added Component: Designator=R3(1608[0603]R)
+Added Component: Designator=R14(1608[0603]R)
+Added Component: Designator=R16(1608[0603]R)
+Added Component: Designator=U4(QFN50P400X400-20VM)
+Added Component: Designator=Y1(7M-12.000MAAJ-T_FP)
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=NetC10_2 Pin=C10-2
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=3.3V Pin=C12-2
+Added Pin To Net: NetName=GND Pin=C13-1
+Added Pin To Net: NetName=3.3V Pin=C13-2
+Added Pin To Net: NetName=GND Pin=C14-1
+Added Pin To Net: NetName=3.3V Pin=C14-2
+Added Pin To Net: NetName=GND Pin=C15-1
+Added Pin To Net: NetName=3.3V Pin=C15-2
+Added Pin To Net: NetName=GND Pin=C16-1
+Added Pin To Net: NetName=SMA_IN Pin=C16-2
+Added Pin To Net: NetName=GND Pin=C17-1
+Added Pin To Net: NetName=3.3V Pin=C17-2
+Added Pin To Net: NetName=GND Pin=C18-1
+Added Pin To Net: NetName=NetC18_2 Pin=C18-2
+Added Pin To Net: NetName=GND Pin=C22-1
+Added Pin To Net: NetName=3.3V Pin=C22-2
+Added Pin To Net: NetName=GND Pin=C26-1
+Added Pin To Net: NetName=NetC26_2 Pin=C26-2
+Added Pin To Net: NetName=GND Pin=C27-1
+Added Pin To Net: NetName=NetC27_2 Pin=C27-2
+Added Pin To Net: NetName=NetC10_2 Pin=F1-1
+Added Pin To Net: NetName=NetC1_1 Pin=F1-2
+Added Pin To Net: NetName=RF_N Pin=F1-3
+Added Pin To Net: NetName=RF_P Pin=F1-4
+Added Pin To Net: NetName=GND Pin=F1-5
+Added Pin To Net: NetName=GND Pin=F1-6
+Added Pin To Net: NetName=RF_N Pin=L4-1
+Added Pin To Net: NetName=RF_P Pin=L4-2
+Added Pin To Net: NetName=SMA_IN Pin=P1-1
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=NCS1 Pin=R3-1
+Added Pin To Net: NetName=3.3V Pin=R3-2
+Added Pin To Net: NetName=SMA_IN Pin=R14-1
+Added Pin To Net: NetName=NetC10_2 Pin=R14-2
+Added Pin To Net: NetName=GND Pin=R16-1
+Added Pin To Net: NetName=NetR16_2 Pin=R16-2
+Added Pin To Net: NetName=SCLK1 Pin=U4-1
+Added Pin To Net: NetName=MISO1 Pin=U4-2
+Added Pin To Net: NetName=GDO2 Pin=U4-3
+Added Pin To Net: NetName=3.3V Pin=U4-4
+Added Pin To Net: NetName=NetC18_2 Pin=U4-5
+Added Pin To Net: NetName=GDO0 Pin=U4-6
+Added Pin To Net: NetName=NCS1 Pin=U4-7
+Added Pin To Net: NetName=NetC26_2 Pin=U4-8
+Added Pin To Net: NetName=3.3V Pin=U4-9
+Added Pin To Net: NetName=NetC27_2 Pin=U4-10
+Added Pin To Net: NetName=3.3V Pin=U4-11
+Added Pin To Net: NetName=RF_P Pin=U4-12
+Added Pin To Net: NetName=RF_N Pin=U4-13
+Added Pin To Net: NetName=3.3V Pin=U4-14
+Added Pin To Net: NetName=3.3V Pin=U4-15
+Added Pin To Net: NetName=GND Pin=U4-16
+Added Pin To Net: NetName=NetR16_2 Pin=U4-17
+Added Pin To Net: NetName=3.3V Pin=U4-18
+Added Pin To Net: NetName=GND Pin=U4-19
+Added Pin To Net: NetName=MOSI1 Pin=U4-20
+Added Pin To Net: NetName=GND Pin=U4-21
+Added Pin To Net: NetName=NetC26_2 Pin=Y1-1
+Added Pin To Net: NetName=GND Pin=Y1-2
+Added Pin To Net: NetName=NetC27_2 Pin=Y1-3
+Added Pin To Net: NetName=GND Pin=Y1-4
+Added Member To Class: ClassName=Flight_Controller2 Member=Component C1 0805
+Added Member To Class: ClassName=Flight_Controller2 Member=Component C10 0805
+Added Member To Class: ClassName=Flight_Controller2 Member=Component C12 CL10B104MB8NNNC
+Added Member To Class: ClassName=Flight_Controller2 Member=Component C13 CL10B104MB8NNNC
+Added Member To Class: ClassName=Flight_Controller2 Member=Component C14 CL10B104MB8NNNC
+Added Member To Class: ClassName=Flight_Controller2 Member=Component C15 CL10B104MB8NNNC
+Added Member To Class: ClassName=Flight_Controller2 Member=Component C16 0805
+Added Member To Class: ClassName=Flight_Controller2 Member=Component C17 CL10B104MB8NNNC
+Added Member To Class: ClassName=Flight_Controller2 Member=Component C18 CL10B104MB8NNNC
+Added Member To Class: ClassName=Flight_Controller2 Member=Component C22 CL10B104MB8NNNC
+Added Member To Class: ClassName=Flight_Controller2 Member=Component C26 CL05C180JB5NNNC
+Added Member To Class: ClassName=Flight_Controller2 Member=Component C27 CL05C180JB5NNNC
+Added Member To Class: ClassName=Flight_Controller2 Member=Component F1 BALUN_2_4_GHZ
+Added Member To Class: ClassName=Flight_Controller2 Member=Component L4 10nH
+Added Member To Class: ClassName=Flight_Controller2 Member=Component P1 SMB
+Added Member To Class: ClassName=Flight_Controller2 Member=Component R3 MCR03EZPFX1002
+Added Member To Class: ClassName=Flight_Controller2 Member=Component R14 Res1
+Added Member To Class: ClassName=Flight_Controller2 Member=Component R16 MCR01MRTF5602
+Added Member To Class: ClassName=Flight_Controller2 Member=Component U4 CC2500_2_4_ghz
+Added Member To Class: ClassName=Flight_Controller2 Member=Component Y1 7M-26.000MEEQ-T

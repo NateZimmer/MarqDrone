@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=GND Pin=C7-1
+Removed Pin From Net: NetName=VIN Pin=C7-2
+Removed Pin From Net: NetName=VBAT Pin=C8-2
+Removed Pin From Net: NetName=GND Pin=Q5-1
+Removed Pin From Net: NetName=VBAT Pin=Q5-3
+Removed Pin From Net: NetName=VIN Pin=Q5-4
+Removed Pin From Net: NetName=VBAT Pin=V1-3
+Removed Member From Class: ClassName=ESC3 Member=C7
+Removed Member From Class: ClassName=ESC3 Member=Q5
+Added Component: Designator=Q28(NXP-SOT1210_L)
+Added Pin To Net: NetName=VIN Pin=C8-2
+Added Pin To Net: NetName=GND Pin=Q28-1
+Added Pin To Net: NetName=GND Pin=Q28-2
+Added Pin To Net: NetName=GND Pin=Q28-3
+Added Pin To Net: NetName=VIN Pin=Q28-4
+Added Pin To Net: NetName=VIN Pin=V1-3
+Added Pin To Net: NetName=GND_EXT Pin=Q28-5
+Added Net: Name=GND_EXT
+Added Member To Class: ClassName=ESC3 Member=Component Q28 PSMN011-60MLX

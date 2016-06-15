@@ -1,0 +1,16 @@
+Added Component: Designator=P3(HDR2X3_3D2)
+Added Pin To Net: NetName=3.3V Pin=P3-4
+Added Pin To Net: NetName=GND Pin=P3-6
+Added Pin To Net: NetName=A1 Pin=P3-3
+Added Pin To Net: NetName=A1 Pin=U1-38
+Added Net: Name=A1
+Added Pin To Net: NetName=A2 Pin=P3-1
+Added Pin To Net: NetName=A2 Pin=U1-37
+Added Net: Name=A2
+Added Pin To Net: NetName=RX1 Pin=P3-5
+Added Pin To Net: NetName=RX1 Pin=U1-39
+Added Net: Name=RX1
+Added Pin To Net: NetName=TX1 Pin=P3-2
+Added Pin To Net: NetName=TX1 Pin=U1-40
+Added Net: Name=TX1
+Added Member To Class: ClassName=Flight_Controller3 Member=Component P3 Header 3X2

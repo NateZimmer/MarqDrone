@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [RF_Controller.PcbDoc]
+   Generated File[RF_Controller.TXT]
+   Generated File[RF_Controller.LDP]
+   Generated File[RF_Controller.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 6:05:10 PM On 10/4/2015

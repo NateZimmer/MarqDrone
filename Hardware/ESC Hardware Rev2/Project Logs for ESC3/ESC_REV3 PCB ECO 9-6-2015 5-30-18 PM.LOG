@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=A_PUMP Pin=D7-1
+Removed Pin From Net: NetName=VP1 Pin=D7-3
+Removed Pin From Net: NetName=NetC35_2 Pin=D8-1
+Removed Pin From Net: NetName=VP1 Pin=D8-3
+Removed Pin From Net: NetName=B_PUMP Pin=D9-1
+Removed Pin From Net: NetName=VP1 Pin=D9-3
+Removed Member From Class: ClassName=ESC3 Member=D7
+Removed Member From Class: ClassName=ESC3 Member=D8
+Removed Member From Class: ClassName=ESC3 Member=D9
+Added Component: Designator=D1(SOD123_3D)
+Added Component: Designator=D3(SOD123_3D)
+Added Component: Designator=D4(SOD123_3D)
+Added Pin To Net: NetName=VP1 Pin=D1-1
+Added Pin To Net: NetName=A_PUMP Pin=D1-2
+Added Pin To Net: NetName=VP1 Pin=D3-1
+Added Pin To Net: NetName=B_PUMP Pin=D3-2
+Added Pin To Net: NetName=VP1 Pin=D4-1
+Added Pin To Net: NetName=NetC35_2 Pin=D4-2
+Added Member To Class: ClassName=ESC3 Member=Component D1 1N4148WFL-G3-08
+Added Member To Class: ClassName=ESC3 Member=Component D3 1N4148WFL-G3-08
+Added Member To Class: ClassName=ESC3 Member=Component D4 1N4148WFL-G3-08

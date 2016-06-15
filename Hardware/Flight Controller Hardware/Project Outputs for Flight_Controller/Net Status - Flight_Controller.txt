@@ -1,0 +1,66 @@
+Net Status Report
+Filename     : C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc
+Date         : 10/15/2015
+Time         : 2:56:06 AM
+Time Elapsed : 00:00:00
+
+Nets, Layer, Length
+    12MHZ_XIN, Signal Layers Only, 0mm
+    12MHZ_XOUT, Signal Layers Only, 0mm
+    3.3V, Signal Layers Only, 0mm
+    5V, Signal Layers Only, 0mm
+    B_LED, Signal Layers Only, 0mm
+    GDO0, Signal Layers Only, 0mm
+    GDO2, Signal Layers Only, 0mm
+    GND, Signal Layers Only, 3.1902mm
+    G_LED, Signal Layers Only, 0mm
+    K22F_SWD_CLK, Signal Layers Only, 0mm
+    MISO1, Signal Layers Only, 0mm
+    MISO2, Signal Layers Only, 0mm
+    MOSI1, Signal Layers Only, 0mm
+    MOSI2, Signal Layers Only, 0mm
+    MPU_INT, Signal Layers Only, 0mm
+    NCS1, Signal Layers Only, 0mm
+    NCS2, Signal Layers Only, 0mm
+    NetC10_2, Signal Layers Only, 0mm
+    NetC18_2, Signal Layers Only, 0mm
+    NetC19_2, Signal Layers Only, 0mm
+    NetC1_1, Signal Layers Only, 0mm
+    NetC23_2, Signal Layers Only, 0mm
+    NetC26_2, Signal Layers Only, 0mm
+    NetC27_2, Signal Layers Only, 0mm
+    NetD2_1, Signal Layers Only, 0mm
+    NetD2_3, Signal Layers Only, 0mm
+    NetD2_4, Signal Layers Only, 0mm
+    NetJ1_1, Signal Layers Only, 0mm
+    NetP2_1, Signal Layers Only, 0mm
+    NetP3_2, Signal Layers Only, 0mm
+    NetP3_3, Signal Layers Only, 0mm
+    NetP4_2, Signal Layers Only, 0mm
+    NetP4_3, Signal Layers Only, 0mm
+    NetP5_2, Signal Layers Only, 0mm
+    NetP5_3, Signal Layers Only, 0mm
+    NetP6_2, Signal Layers Only, 0mm
+    NetP6_3, Signal Layers Only, 0mm
+    NetR161_1, Signal Layers Only, 0mm
+    NetR16_2, Signal Layers Only, 0mm
+    PWM_CH0, Signal Layers Only, 0mm
+    PWM_CH1, Signal Layers Only, 0mm
+    PWM_CH2, Signal Layers Only, 0mm
+    PWM_CH3, Signal Layers Only, 0mm
+    RF_N, Signal Layers Only, 0mm
+    RF_P, Signal Layers Only, 0mm
+    RST_TGTMCU, Signal Layers Only, 0mm
+    R_LED, Signal Layers Only, 0mm
+    SCL, Signal Layers Only, 0mm
+    SCLK1, Signal Layers Only, 0mm
+    SCLK2, Signal Layers Only, 0mm
+    SDA, Signal Layers Only, 0mm
+    SMA_IN, Signal Layers Only, 0mm
+    SWD_DIO_TGTMCU, Signal Layers Only, 0mm
+    USB_MCU_N, Signal Layers Only, 0mm
+    USB_MCU_P, Signal Layers Only, 0mm
+    USB_PWR, Signal Layers Only, 0mm
+    VBAT, Signal Layers Only, 0mm
+    VP1, Signal Layers Only, 0mm
+count : 58

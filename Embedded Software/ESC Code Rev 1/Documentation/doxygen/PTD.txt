@@ -1,0 +1,57 @@
+/*!
+\page PTD PTD (Init_GPIO)
+**          This file implements the GPIO (PTD) module initialization
+**          according to the Peripheral Initialization settings, and
+**          defines interrupt service routines prototypes.
+
+- \subpage PTD_settings
+- \subpage PTD_regs_overview  
+- \subpage PTD_regs_details
+- \ref PTD_module "Component documentation" 
+
+\page PTD_regs_overview Registers Initialization Overview
+This page initialization values for the registers of the peripheral(s) configured
+by the component. 
+<table>
+<tr><td colspan="4" class="ttitle1">PTD Initialization</td></tr>
+<tr><td class="ttitle2">Address</td><td class="ttitle2">Register</td><td class="ttitle2">Register Value</td><td class="ttitle2">Register Description</td></tr>
+</table>
+<br/>
+\page PTD_regs_details Register Initialization Details
+This page contains detailed description of initialization values for the 
+registers of the peripheral(s) configured by the component. 
+
+*/
+/*!
+\page PTD_settings Component Settings
+\code
+**          Component name                                 : PTD
+**          Device                                         : PTD
+**          Settings                                       : 
+**            Pin 0                                        : Do not initialize
+**            Pin 1                                        : Do not initialize
+**            Pin 2                                        : Do not initialize
+**            Pin 3                                        : Do not initialize
+**            Pin 4                                        : Do not initialize
+**            Pin 5                                        : Do not initialize
+**            Pin 6                                        : Do not initialize
+**            Pin 7                                        : Do not initialize
+**          Pins                                           : 
+**            Pin 0                                        : Disabled
+**            Pin 1                                        : Disabled
+**            Pin 2                                        : Disabled
+**            Pin 3                                        : Disabled
+**            Pin 4                                        : Disabled
+**            Pin 5                                        : Disabled
+**            Pin 6                                        : Disabled
+**            Pin 7                                        : Disabled
+**          Interrupts                                     : 
+**            Port interrupt                               : Enabled
+**              Interrupt                                  : INT_PORTD
+**              Interrupt request                          : Enabled
+**              Interrupt priority                         : 3
+**              ISR Name                                   : 
+**          Initialization                                 : 
+**            Call Init method                             : yes
+\endcode
+*/

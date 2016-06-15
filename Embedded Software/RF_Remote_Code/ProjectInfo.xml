@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+  Copyright : 2012 Freescale, Inc. All Rights Reserved.
+
+  This configuration file is a standard interchange file that's format is maintained
+  by Freescale, Inc. The configuration file is a derivative work
+  of the Processor Expert Software technology licensed for use by customers
+  as defined as SOFTWARE in the product's End User License Agreement. This file
+  and format are free to use and distribute for read-only purposes. You do not have
+  the right to create these files or modify this format or use for any purposes other
+  than interchange with the Processor Expert Software technology.
+
+  THIS SOFTWARE IS PROVIDED "AS IS".
+
+  NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT
+  LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+  PURPOSE APPLY TO THIS SOFTWARE. IN NO EVENT WILL FREESCALE BE LIABLE, WHETHER
+  IN CONTRACT, TORT, OR OTHERWISE, FOR ANY INCIDENTAL, SPECIAL, INDIRECT,
+  CONSEQUENTIAL OR PUNITIVE DAMAGES, INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR
+  ANY LOSS OF USE, LOSS OF TIME, INCONVENIENCE, COMMERCIAL LOSS, OR LOST PROFITS,
+  SAVINGS, OR REVENUES TO THE FULL EXTENT SUCH MAY BE DISCLAIMED BY LAW.
+
+-->
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ProjectInfoDescription.xsd">
+  <PROCESSOR>
+    <DeviceID>MKL25Z64xxx4</DeviceID>
+    <CoreNum>1</CoreNum>
+    <Cores>
+      <Core>
+        <CoreSet>Cortex-M0+</CoreSet>
+      </Core>
+    </Cores>
+    <SRAMsize>8192</SRAMsize>
+    <FLASHsize>64k</FLASHsize>
+  </PROCESSOR>
+  <PATHS>
+    <LinkerCommandFile>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Project_Settings\Linker_Files\ProcessorExpert.ld</LinkerCommandFile>
+    <IncludePaths>
+      <Path>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\</Path>
+      <Path>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\IO_Map\</Path>
+      <Path>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\</Path>
+      <Path>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\</Path>
+    </IncludePaths>
+    <SourceCodePaths>
+      <Path>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\</Path>
+      <Path>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Project_Settings\Startup_Code\</Path>
+      <Path>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\App\</Path>
+      <Path>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\Drivers\</Path>
+      <Path>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\</Path>
+      <Path>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\External\</Path>
+    </SourceCodePaths>
+  </PATHS>
+  <FILES>
+    <GeneratedCs>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\ADC0.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\CDC1.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\CS1.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\Cpu.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\IFsh1.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\IntFlashLdd1.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\PE_LDD.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\PTC.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\PTD.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\RNG1.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\Rx1.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\SPI0.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\TPM1.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\TPM2.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\Tx1.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\USB0.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\USB1.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\Vectors.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\WAIT1.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\usb_cdc.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\usb_cdc_pstn.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\usb_class.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\usb_dci_kinetis.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\usb_descriptor.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\usb_driver.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\usb_framework.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\wdt_kinetis.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Project_Settings\Startup_Code\startup.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\App\Commands.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\App\IMU_Data.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\App\Joystick.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\App\RF_Control.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\App\Saved_Settings.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\App\Scheduler.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\App\Task_List.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\Drivers\ADC.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\Drivers\GPIO.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\Drivers\LED_PWM.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\Drivers\PWM.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\Drivers\Remote.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\Drivers\SPI.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\Drivers\Timer.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\Drivers\USB_Echo.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\Events.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\External\cc.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\External\cc2500.c</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\main.c</PathName>
+    </GeneratedCs>
+    <GeneratedHs>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\ADC0.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\CDC1.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\CS1.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\Cpu.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\FSL_USB_Stack_Config.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\IFsh1.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\IO_Map.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\IntFlashLdd1.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\PE_Const.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\PE_Error.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\PE_LDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\PE_Types.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\PTC.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\PTD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\RNG1.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\Rx1.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\SPI0.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\TPM1.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\TPM2.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\Tx1.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\USB0.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\USB1.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\USB_Config.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\WAIT1.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\derivative.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\hidef.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\types.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\usb_bdt_kinetis.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\usb_cdc.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\usb_cdc_pstn.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\usb_class.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\usb_dci_kinetis.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\usb_dciapi.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\usb_descriptor.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\usb_devapi.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\usb_framework.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\usb_user_config.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Generated_Code\wdt_kinetis.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\App\Commands.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\App\IMU_Data.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\App\Joystick.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\App\RF_Control.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\App\Saved_Settings.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\App\Scheduler.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\App\Task_List.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\Drivers\ADC.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\Drivers\GPIO.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\Drivers\LED_PWM.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\Drivers\PWM.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\Drivers\Remote.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\Drivers\SPI.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\Drivers\Timer.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\Drivers\USB_Echo.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\Events.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\External\cc.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Sources\External\cc2500.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\IO_Map\MKL25Z4.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\ADC_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\CMP_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\COP_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\DAC_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\DMAMUX_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\DMA_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\FTFA_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\GPIO_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\I2C_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\LPTMR_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\MCG_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\MCM_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\OSC_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\PDD_Types.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\PIT_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\PORT_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\RTC_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\SIM_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\SPI_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\SysTick_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\TPM_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\TSI_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\UART0_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\UART_PDD.h</PathName>
+      <PathName>C:\Users\Z\Google Drive\Workspace_KDS\RF_Remote_Code\Static_Code\PDD\USB_PDD.h</PathName>
+    </GeneratedHs>
+  </FILES>
+  <OPTIONS>
+  </OPTIONS>
+</export>

@@ -1,0 +1,64 @@
+<CodeGenerationInfo>
+  <ToolchainSettings>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Compiler_SearchUserPaths</name>
+      <values lines_count="4">
+        <Line>"${ProcessorExpertPath}/lib/Kinetis/iofiles"</Line>
+        <Line>"${ProcessorExpertPath}/lib/Kinetis/pdd/inc"</Line>
+        <Line>"${ProjDirPath}/Sources"</Line>
+        <Line>"${ProjDirPath}/Generated_Code"</Line>
+      </values>
+    </option>
+  </ToolchainSettings>
+  <GeneratedFilesList>
+    <GeneratedByPE>
+      <File Name="Generated_Code/IO_Map.h" FileDate="2015-09-24, 00:53:41" FileAge="1443074021698" FileType="45637" />
+      <File Name="Generated_Code/PIT.c" FileDate="2015-09-24, 21:11:46" FileAge="1443147106909" FileType="45637" CompNumb="20" />
+      <File Name="Generated_Code/TPM2.h" FileDate="2015-09-30, 00:36:29" FileAge="1443591389290" FileType="45637" CompNumb="11" />
+      <File Name="Documentation/ProcessorExpert_Settings.xml" FileDate="2015-09-30, 00:36:29" FileAge="1443591389344" FileType="3072" />
+      <File Name="Generated_Code/TPM2.c" FileDate="2015-09-30, 00:36:29" FileAge="1443591389303" FileType="45637" CompNumb="11" />
+      <File Name="Generated_Code/TPM1.h" FileDate="2015-09-30, 00:36:29" FileAge="1443591389298" FileType="45637" CompNumb="9" />
+      <File Name="Documentation/doxygen/TPM2.txt" FileDate="2015-09-30, 00:36:29" FileAge="1443591389305" FileType="45637" CompNumb="11" />
+      <File Name="Generated_Code/TPM1.c" FileDate="2015-09-30, 00:36:29" FileAge="1443591389295" FileType="45637" CompNumb="9" />
+      <File Name="Documentation/ProcessorExpert_SIGNALS.txt" FileDate="2015-09-30, 00:36:29" FileAge="1443591389325" FileType="3072" />
+      <File Name="Documentation/doxygen/RoutingReport.txt" FileDate="2015-09-24, 00:53:41" FileAge="1443074021689" FileType="45637" CompNumb="2" />
+      <File Name="Documentation/doxygen/ProcessorExpert.txt" FileDate="2015-09-28, 22:41:12" FileAge="1443498072741" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/Cpu.h" FileDate="2015-09-28, 20:05:48" FileAge="1443488748836" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/TPM0.h" FileDate="2015-09-28, 23:13:38" FileAge="1443500018038" FileType="45637" CompNumb="35" />
+      <File Name="Generated_Code/Cpu.c" FileDate="2015-09-30, 00:36:29" FileAge="1443591389308" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/TPM0.c" FileDate="2015-09-28, 23:13:38" FileAge="1443500018035" FileType="45637" CompNumb="35" />
+      <File Name="Generated_Code/PTD.h" FileDate="2015-09-24, 20:30:03" FileAge="1443144603371" FileType="45637" CompNumb="22" />
+      <File Name="Documentation/doxygen/PIT.txt" FileDate="2015-09-24, 21:11:46" FileAge="1443147106911" FileType="45637" CompNumb="20" />
+      <File Name="Sources/ProcessorExpert.c" FileDate="2015-09-29, 23:20:32" FileAge="1443586832407" FileType="128" />
+      <File Name="Generated_Code/PTD.c" FileDate="2015-09-24, 20:30:03" FileAge="1443144603368" FileType="45637" CompNumb="22" />
+      <File Name="Generated_Code/CS1.h" FileDate="2015-09-24, 01:07:26" FileAge="1443074846095" FileType="45637" CompNumb="23" />
+      <File Name="Documentation/doxygen/PTD.txt" FileDate="2015-09-24, 20:30:03" FileAge="1443144603422" FileType="45637" CompNumb="22" />
+      <File Name="Generated_Code/CS1.c" FileDate="2015-09-24, 01:07:26" FileAge="1443074846094" FileType="45637" CompNumb="23" />
+      <File Name="Generated_Code/PE_LDD.h" FileDate="2015-09-28, 22:41:12" FileAge="1443498072743" FileType="45637" CompNumb="2" />
+      <File Name="Documentation/doxygen/TPM1.txt" FileDate="2015-09-30, 00:36:29" FileAge="1443591389300" FileType="45637" CompNumb="9" />
+      <File Name="Documentation/doxygen/pex.doxyfile" FileDate="2015-09-24, 00:53:41" FileAge="1443074021688" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/PE_Const.h" FileDate="2015-09-24, 00:53:41" FileAge="1443074021700" FileType="45637" />
+      <File Name="Generated_Code/PE_LDD.c" FileDate="2015-09-24, 00:53:41" FileAge="1443074021685" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/CMP0.h" FileDate="2015-09-29, 23:22:18" FileAge="1443586938764" FileType="45637" CompNumb="10" />
+      <File Name="Generated_Code/PE_Types.h" FileDate="2015-09-24, 00:53:41" FileAge="1443074021704" FileType="45637" />
+      <File Name="Generated_Code/PE_Error.h" FileDate="2015-09-24, 00:53:41" FileAge="1443074021702" FileType="45637" />
+      <File Name="Generated_Code/PTB.h" FileDate="2015-09-24, 20:30:03" FileAge="1443144603375" FileType="45637" CompNumb="21" />
+      <File Name="Generated_Code/Vectors.c" FileDate="2015-09-30, 00:36:29" FileAge="1443591389311" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/CMP0.c" FileDate="2015-09-29, 23:22:18" FileAge="1443586938769" FileType="45637" CompNumb="10" />
+      <File Name="Generated_Code/PTB.c" FileDate="2015-09-24, 20:30:03" FileAge="1443144603417" FileType="45637" CompNumb="21" />
+      <File Name="Generated_Code/WAIT1.h" FileDate="2015-09-24, 01:07:26" FileAge="1443074846051" FileType="45637" CompNumb="19" />
+      <File Name="Sources/Events.h" FileDate="2015-09-28, 22:41:12" FileAge="1443498072748" FileType="131328" />
+      <File Name="Documentation/doxygen/TPM0.txt" FileDate="2015-09-28, 23:13:38" FileAge="1443500018055" FileType="45637" CompNumb="35" />
+      <File Name="Generated_Code/WAIT1.c" FileDate="2015-09-24, 01:07:26" FileAge="1443074846050" FileType="45637" CompNumb="19" />
+      <File Name="Sources/Events.c" FileDate="2015-09-30, 00:30:07" FileAge="1443591007626" FileType="131328" />
+      <File Name="Documentation/doxygen/pex.css" FileDate="2015-09-24, 00:53:41" FileAge="1443074021610" FileType="16384" CompNumb="2" />
+      <File Name="Documentation/ProcessorExpert.txt" FileDate="2015-09-28, 22:41:12" FileAge="1443498072797" FileType="3072" />
+      <File Name="Project_Settings/Linker_Files/ProcessorExpert.ld" FileDate="2015-09-24, 00:53:41" FileAge="1443074021682" FileType="8" CompNumb="2" />
+      <File Name="Documentation/doxygen/PTB.txt" FileDate="2015-09-24, 20:30:03" FileAge="1443144603419" FileType="45637" CompNumb="21" />
+      <File Name="Project_Settings/Debugger/MKL25Z64.mem" FileDate="2015-09-24, 00:53:41" FileAge="1443074021686" FileType="45637" CompNumb="2" />
+      <File Name="Documentation/doxygen/CMP0.txt" FileDate="2015-09-29, 23:22:18" FileAge="1443586938772" FileType="45637" CompNumb="10" />
+      <File Name="Generated_Code/PIT.h" FileDate="2015-09-24, 21:11:46" FileAge="1443147106870" FileType="45637" CompNumb="20" />
+    </GeneratedByPE>
+  </GeneratedFilesList>
+  <CodeGenReference>58</CodeGenReference>
+</CodeGenerationInfo>

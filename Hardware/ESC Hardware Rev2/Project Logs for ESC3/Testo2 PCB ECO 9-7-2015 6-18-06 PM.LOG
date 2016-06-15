@@ -1,0 +1,260 @@
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=VP1 Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=VP1 Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=VP1 Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=EXTAL+ Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=EXTAL- Pin=C5-2
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=5V Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=VP1 Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=5V Pin=C9-2
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=A_BLMA Pin=C10-2
+Added Pin To Net: NetName=GND Pin=C11-1
+Added Pin To Net: NetName=VP1 Pin=C11-2
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=VP1 Pin=C12-2
+Added Pin To Net: NetName=GND Pin=C14-1
+Added Pin To Net: NetName=VP1 Pin=C14-2
+Added Pin To Net: NetName=GND Pin=C15-1
+Added Pin To Net: NetName=VP1 Pin=C15-2
+Added Pin To Net: NetName=GND Pin=C16-1
+Added Pin To Net: NetName=3.3V Pin=C16-2
+Added Pin To Net: NetName=3.3V Pin=C19-1
+Added Pin To Net: NetName=GND Pin=C19-2
+Added Pin To Net: NetName=3.3V Pin=C20-1
+Added Pin To Net: NetName=GND Pin=C20-2
+Added Pin To Net: NetName=GND Pin=C21-1
+Added Pin To Net: NetName=RST_TGTMCU Pin=C21-2
+Added Pin To Net: NetName=NetC22_1 Pin=C22-1
+Added Pin To Net: NetName=NetC22_2 Pin=C22-2
+Added Pin To Net: NetName=GND Pin=C24-1
+Added Pin To Net: NetName=3.3V Pin=C24-2
+Added Pin To Net: NetName=3.3V Pin=C26-1
+Added Pin To Net: NetName=GND Pin=C26-2
+Added Pin To Net: NetName=GND Pin=C32-1
+Added Pin To Net: NetName=VP1 Pin=C32-2
+Added Pin To Net: NetName=OUT1 Pin=C33-1
+Added Pin To Net: NetName=A_PUMP Pin=C33-2
+Added Pin To Net: NetName=OUT2 Pin=C34-1
+Added Pin To Net: NetName=B_PUMP Pin=C34-2
+Added Pin To Net: NetName=OUT3 Pin=C35-1
+Added Pin To Net: NetName=NetC35_2 Pin=C35-2
+Added Pin To Net: NetName=GND Pin=C38-1
+Added Pin To Net: NetName=B_BLMA Pin=C38-2
+Added Pin To Net: NetName=GND Pin=C39-1
+Added Pin To Net: NetName=C_BLMA Pin=C39-2
+Added Pin To Net: NetName=VP1 Pin=D1-1
+Added Pin To Net: NetName=A_PUMP Pin=D1-2
+Added Pin To Net: NetName=VP1 Pin=D3-1
+Added Pin To Net: NetName=B_PUMP Pin=D3-2
+Added Pin To Net: NetName=VP1 Pin=D4-1
+Added Pin To Net: NetName=NetC35_2 Pin=D4-2
+Added Pin To Net: NetName=LED Pin=D6-1
+Added Pin To Net: NetName=NetD6_2 Pin=D6-2
+Added Pin To Net: NetName=5V Pin=J5-1
+Added Pin To Net: NetName=USB_MCU_N Pin=J5-2
+Added Pin To Net: NetName=USB_MCU_P Pin=J5-3
+Added Pin To Net: NetName=GND_EXT Pin=J5-5
+Added Pin To Net: NetName=GND_EXT Pin=J5-Z1
+Added Pin To Net: NetName=GND_EXT Pin=J5-Z2
+Added Pin To Net: NetName=NetC22_2 Pin=L2-1
+Added Pin To Net: NetName=3.3V Pin=L2-2
+Added Pin To Net: NetName=NetC22_1 Pin=L3-1
+Added Pin To Net: NetName=GND Pin=L3-2
+Added Pin To Net: NetName=GND Pin=P1-1
+Added Pin To Net: NetName=SDA Pin=P1-2
+Added Pin To Net: NetName=SCL Pin=P1-3
+Added Pin To Net: NetName=3.3V Pin=P2-1
+Added Pin To Net: NetName=SWD_DIO_TGTMCU Pin=P2-2
+Added Pin To Net: NetName=GND Pin=P2-3
+Added Pin To Net: NetName=KL25_SWD_CLK Pin=P2-4
+Added Pin To Net: NetName=GND Pin=P2-5
+Added Pin To Net: NetName=RST_TGTMCU Pin=P2-10
+Added Pin To Net: NetName=OUT1 Pin=Q1-1
+Added Pin To Net: NetName=OUT1 Pin=Q1-2
+Added Pin To Net: NetName=OUT1 Pin=Q1-3
+Added Pin To Net: NetName=GATE_A_H Pin=Q1-4
+Added Pin To Net: NetName=VP1 Pin=Q1-5
+Added Pin To Net: NetName=OUT2 Pin=Q2-1
+Added Pin To Net: NetName=OUT2 Pin=Q2-2
+Added Pin To Net: NetName=OUT2 Pin=Q2-3
+Added Pin To Net: NetName=GATE_B_H Pin=Q2-4
+Added Pin To Net: NetName=VP1 Pin=Q2-5
+Added Pin To Net: NetName=OUT3 Pin=Q3-1
+Added Pin To Net: NetName=OUT3 Pin=Q3-2
+Added Pin To Net: NetName=OUT3 Pin=Q3-3
+Added Pin To Net: NetName=GATE_C_H Pin=Q3-4
+Added Pin To Net: NetName=VP1 Pin=Q3-5
+Added Pin To Net: NetName=GND Pin=Q4-1
+Added Pin To Net: NetName=GND Pin=Q4-2
+Added Pin To Net: NetName=GND Pin=Q4-3
+Added Pin To Net: NetName=GATE_A_L Pin=Q4-4
+Added Pin To Net: NetName=OUT1 Pin=Q4-5
+Added Pin To Net: NetName=GND Pin=Q6-1
+Added Pin To Net: NetName=GND Pin=Q6-2
+Added Pin To Net: NetName=GND Pin=Q6-3
+Added Pin To Net: NetName=GATE_B_L Pin=Q6-4
+Added Pin To Net: NetName=OUT2 Pin=Q6-5
+Added Pin To Net: NetName=GND Pin=Q7-1
+Added Pin To Net: NetName=GND Pin=Q7-2
+Added Pin To Net: NetName=GND Pin=Q7-3
+Added Pin To Net: NetName=GATE_C_L Pin=Q7-4
+Added Pin To Net: NetName=OUT3 Pin=Q7-5
+Added Pin To Net: NetName=GND Pin=Q28-1
+Added Pin To Net: NetName=GND Pin=Q28-2
+Added Pin To Net: NetName=GND Pin=Q28-3
+Added Pin To Net: NetName=VP1 Pin=Q28-4
+Added Pin To Net: NetName=GND_EXT Pin=Q28-5
+Added Pin To Net: NetName=OUT1 Pin=R28-1
+Added Pin To Net: NetName=A_BLMA Pin=R28-2
+Added Pin To Net: NetName=A_BLMA Pin=R33-1
+Added Pin To Net: NetName=GND Pin=R33-2
+Added Pin To Net: NetName=OUT2 Pin=R37-1
+Added Pin To Net: NetName=B_BLMA Pin=R37-2
+Added Pin To Net: NetName=OUT3 Pin=R39-1
+Added Pin To Net: NetName=C_BLMA Pin=R39-2
+Added Pin To Net: NetName=B_BLMA Pin=R40-1
+Added Pin To Net: NetName=GND Pin=R40-2
+Added Pin To Net: NetName=C_BLMA Pin=R41-1
+Added Pin To Net: NetName=GND Pin=R41-2
+Added Pin To Net: NetName=RST_TGTMCU Pin=R43-1
+Added Pin To Net: NetName=3.3V Pin=R43-2
+Added Pin To Net: NetName=NetD6_2 Pin=R44-1
+Added Pin To Net: NetName=GND Pin=R44-2
+Added Pin To Net: NetName=NEUTRAL Pin=R46-1
+Added Pin To Net: NetName=A_BLMA Pin=R46-2
+Added Pin To Net: NetName=NEUTRAL Pin=R47-1
+Added Pin To Net: NetName=B_BLMA Pin=R47-2
+Added Pin To Net: NetName=NEUTRAL Pin=R48-1
+Added Pin To Net: NetName=C_BLMA Pin=R48-2
+Added Pin To Net: NetName=CMP_OUT Pin=U2-1
+Added Pin To Net: NetName=3.3V Pin=U2-3
+Added Pin To Net: NetName=GND Pin=U2-4
+Added Pin To Net: NetName=USB_MCU_P Pin=U2-5
+Added Pin To Net: NetName=USB_MCU_N Pin=U2-6
+Added Pin To Net: NetName=3.3V Pin=U2-7
+Added Pin To Net: NetName=5V Pin=U2-8
+Added Pin To Net: NetName=NetC22_2 Pin=U2-13
+Added Pin To Net: NetName=NetC22_2 Pin=U2-14
+Added Pin To Net: NetName=NetC22_1 Pin=U2-15
+Added Pin To Net: NetName=NetC22_1 Pin=U2-16
+Added Pin To Net: NetName=NEUTRAL Pin=U2-17
+Added Pin To Net: NetName=A_BLMA Pin=U2-18
+Added Pin To Net: NetName=SCL Pin=U2-20
+Added Pin To Net: NetName=SDA Pin=U2-21
+Added Pin To Net: NetName=KL25_SWD_CLK Pin=U2-22
+Added Pin To Net: NetName=SWD_DIO_TGTMCU Pin=U2-25
+Added Pin To Net: NetName=3.3V Pin=U2-30
+Added Pin To Net: NetName=GND Pin=U2-31
+Added Pin To Net: NetName=EXTAL+ Pin=U2-32
+Added Pin To Net: NetName=EXTAL- Pin=U2-33
+Added Pin To Net: NetName=RST_TGTMCU Pin=U2-34
+Added Pin To Net: NetName=3H_EXTERN Pin=U2-46
+Added Pin To Net: NetName=GND Pin=U2-47
+Added Pin To Net: NetName=3.3V Pin=U2-48
+Added Pin To Net: NetName=C_BLMA Pin=U2-51
+Added Pin To Net: NetName=B_BLMA Pin=U2-52
+Added Pin To Net: NetName=B_BLML Pin=U2-53
+Added Pin To Net: NetName=B_BLMH Pin=U2-54
+Added Pin To Net: NetName=C_BLMH Pin=U2-57
+Added Pin To Net: NetName=C_BLML Pin=U2-58
+Added Pin To Net: NetName=A_BLML Pin=U2-59
+Added Pin To Net: NetName=A_BLMH Pin=U2-60
+Added Pin To Net: NetName=LED Pin=U2-64
+Added Pin To Net: NetName=A_PUMP Pin=U3-1
+Added Pin To Net: NetName=A_BLML Pin=U3-2
+Added Pin To Net: NetName=A_BLMH Pin=U3-3
+Added Pin To Net: NetName=VP1 Pin=U3-4
+Added Pin To Net: NetName=GATE_A_L Pin=U3-5
+Added Pin To Net: NetName=GND Pin=U3-6
+Added Pin To Net: NetName=OUT1 Pin=U3-7
+Added Pin To Net: NetName=GATE_A_H Pin=U3-8
+Added Pin To Net: NetName=B_PUMP Pin=U4-1
+Added Pin To Net: NetName=B_BLML Pin=U4-2
+Added Pin To Net: NetName=B_BLMH Pin=U4-3
+Added Pin To Net: NetName=VP1 Pin=U4-4
+Added Pin To Net: NetName=GATE_B_L Pin=U4-5
+Added Pin To Net: NetName=GND Pin=U4-6
+Added Pin To Net: NetName=OUT2 Pin=U4-7
+Added Pin To Net: NetName=GATE_B_H Pin=U4-8
+Added Pin To Net: NetName=NetC35_2 Pin=U5-1
+Added Pin To Net: NetName=C_BLML Pin=U5-2
+Added Pin To Net: NetName=C_BLMH Pin=U5-3
+Added Pin To Net: NetName=VP1 Pin=U5-4
+Added Pin To Net: NetName=GATE_C_L Pin=U5-5
+Added Pin To Net: NetName=GND Pin=U5-6
+Added Pin To Net: NetName=OUT3 Pin=U5-7
+Added Pin To Net: NetName=GATE_C_H Pin=U5-8
+Added Pin To Net: NetName=GND Pin=V1-1
+Added Pin To Net: NetName=5V Pin=V1-2
+Added Pin To Net: NetName=VP1 Pin=V1-3
+Added Pin To Net: NetName=EXTAL+ Pin=Y1-1
+Added Pin To Net: NetName=GND Pin=Y1-2
+Added Pin To Net: NetName=EXTAL- Pin=Y1-3
+Added Pin To Net: NetName=GND Pin=Y1-4
+Added Member To Class: ClassName=ESC3 Member=Component C1 Cap
+Added Member To Class: ClassName=ESC3 Member=Component C2 Cap
+Added Member To Class: ClassName=ESC3 Member=Component C3 Cap
+Added Member To Class: ClassName=ESC3 Member=Component C4 CL05C180JB5NNNC
+Added Member To Class: ClassName=ESC3 Member=Component C5 CL05C180JB5NNNC
+Added Member To Class: ClassName=ESC3 Member=Component C6 0805
+Added Member To Class: ClassName=ESC3 Member=Component C7 Cap
+Added Member To Class: ClassName=ESC3 Member=Component C9 Cap
+Added Member To Class: ClassName=ESC3 Member=Component C10 0805
+Added Member To Class: ClassName=ESC3 Member=Component C11 Cap
+Added Member To Class: ClassName=ESC3 Member=Component C12 Cap
+Added Member To Class: ClassName=ESC3 Member=Component C14 0805
+Added Member To Class: ClassName=ESC3 Member=Component C15 0805
+Added Member To Class: ClassName=ESC3 Member=Component C16 0805
+Added Member To Class: ClassName=ESC3 Member=Component C19 0805
+Added Member To Class: ClassName=ESC3 Member=Component C20 0805
+Added Member To Class: ClassName=ESC3 Member=Component C21 0805
+Added Member To Class: ClassName=ESC3 Member=Component C22 0805
+Added Member To Class: ClassName=ESC3 Member=Component C24 0805
+Added Member To Class: ClassName=ESC3 Member=Component C26 0805
+Added Member To Class: ClassName=ESC3 Member=Component C32 0805
+Added Member To Class: ClassName=ESC3 Member=Component C33 0805
+Added Member To Class: ClassName=ESC3 Member=Component C34 0805
+Added Member To Class: ClassName=ESC3 Member=Component C35 0805
+Added Member To Class: ClassName=ESC3 Member=Component C38 0805
+Added Member To Class: ClassName=ESC3 Member=Component C39 0805
+Added Member To Class: ClassName=ESC3 Member=Component D1 1N4148WFL-G3-08
+Added Member To Class: ClassName=ESC3 Member=Component D3 1N4148WFL-G3-08
+Added Member To Class: ClassName=ESC3 Member=Component D4 1N4148WFL-G3-08
+Added Member To Class: ClassName=ESC3 Member=Component D6 LED3
+Added Member To Class: ClassName=ESC3 Member=Component J5 614105150721
+Added Member To Class: ClassName=ESC3 Member=Component L2 FB
+Added Member To Class: ClassName=ESC3 Member=Component L3 FB
+Added Member To Class: ClassName=ESC3 Member=Component P1 Header 3
+Added Member To Class: ClassName=ESC3 Member=Component P2 Header 5X2
+Added Member To Class: ClassName=ESC3 Member=Component Q1 PSMN011-60MLX
+Added Member To Class: ClassName=ESC3 Member=Component Q2 PSMN011-60MLX
+Added Member To Class: ClassName=ESC3 Member=Component Q3 PSMN011-60MLX
+Added Member To Class: ClassName=ESC3 Member=Component Q4 PSMN011-60MLX
+Added Member To Class: ClassName=ESC3 Member=Component Q6 PSMN011-60MLX
+Added Member To Class: ClassName=ESC3 Member=Component Q7 PSMN011-60MLX
+Added Member To Class: ClassName=ESC3 Member=Component Q28 PSMN011-60MLX
+Added Member To Class: ClassName=ESC3 Member=Component R28 Res1
+Added Member To Class: ClassName=ESC3 Member=Component R33 Res1
+Added Member To Class: ClassName=ESC3 Member=Component R37 Res1
+Added Member To Class: ClassName=ESC3 Member=Component R39 Res1
+Added Member To Class: ClassName=ESC3 Member=Component R40 Res1
+Added Member To Class: ClassName=ESC3 Member=Component R41 Res1
+Added Member To Class: ClassName=ESC3 Member=Component R43 Res1
+Added Member To Class: ClassName=ESC3 Member=Component R44 Res1
+Added Member To Class: ClassName=ESC3 Member=Component R46 Res1
+Added Member To Class: ClassName=ESC3 Member=Component R47 Res1
+Added Member To Class: ClassName=ESC3 Member=Component R48 Res1
+Added Member To Class: ClassName=ESC3 Member=Component U2 MKL25Z64VLH4
+Added Member To Class: ClassName=ESC3 Member=Component U3 ADP3110A
+Added Member To Class: ClassName=ESC3 Member=Component U4 ADP3110A
+Added Member To Class: ClassName=ESC3 Member=Component U5 ADP3110A
+Added Member To Class: ClassName=ESC3 Member=Component V1 MCP1702T-5002E/CB
+Added Member To Class: ClassName=ESC3 Member=Component Y1 CX3225GB12000P0HPQCC

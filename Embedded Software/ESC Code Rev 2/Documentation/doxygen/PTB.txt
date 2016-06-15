@@ -1,0 +1,59 @@
+/*!
+\page PTB PTB (Init_GPIO)
+**          This file implements the GPIO (PTB) module initialization
+**          according to the Peripheral Initialization settings, and
+**          defines interrupt service routines prototypes.
+
+- \subpage PTB_settings
+- \subpage PTB_regs_overview  
+- \subpage PTB_regs_details
+- \ref PTB_module "Component documentation" 
+
+\page PTB_regs_overview Registers Initialization Overview
+This page initialization values for the registers of the peripheral(s) configured
+by the component. 
+<table>
+<tr><td colspan="4" class="ttitle1">PTB Initialization</td></tr>
+<tr><td class="ttitle2">Address</td><td class="ttitle2">Register</td><td class="ttitle2">Register Value</td><td class="ttitle2">Register Description</td></tr>
+</table>
+<br/>
+\page PTB_regs_details Register Initialization Details
+This page contains detailed description of initialization values for the 
+registers of the peripheral(s) configured by the component. 
+
+*/
+/*!
+\page PTB_settings Component Settings
+\code
+**          Component name                                 : PTB
+**          Device                                         : PTB
+**          Settings                                       : 
+**            Pin 0                                        : Do not initialize
+**            Pin 1                                        : Do not initialize
+**            Pin 2                                        : Do not initialize
+**            Pin 3                                        : Do not initialize
+**            Pin 8                                        : Do not initialize
+**            Pin 9                                        : Do not initialize
+**            Pin 10                                       : Do not initialize
+**            Pin 11                                       : Do not initialize
+**            Pin 16                                       : Do not initialize
+**            Pin 17                                       : Do not initialize
+**            Pin 18                                       : Do not initialize
+**            Pin 19                                       : Do not initialize
+**          Pins                                           : 
+**            Pin 0                                        : Disabled
+**            Pin 1                                        : Disabled
+**            Pin 2                                        : Disabled
+**            Pin 3                                        : Disabled
+**            Pin 8                                        : Disabled
+**            Pin 9                                        : Disabled
+**            Pin 10                                       : Disabled
+**            Pin 11                                       : Disabled
+**            Pin 16                                       : Disabled
+**            Pin 17                                       : Disabled
+**            Pin 18                                       : Disabled
+**            Pin 19                                       : Disabled
+**          Initialization                                 : 
+**            Call Init method                             : yes
+\endcode
+*/

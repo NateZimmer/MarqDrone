@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=5V Pin=C6-1
+Removed Pin From Net: NetName=GND Pin=C6-2
+Change Component DesignItemId : Designator=C6 Old DesignItemId=Cap Pol1 New DesignItemId=Cap Semi
+Change Component Footprint: Designator=C6 Old Footprint=1206_C New Footprint=1608[0603]C
+Change Component Comment : Designator=C6 Old Comment=Cap Pol1 New Comment=0805
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=5V Pin=C6-2

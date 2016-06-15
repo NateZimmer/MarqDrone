@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=GND Pin=C28-2
+Removed Member From Class: ClassName=ESC3 Member=C28
+Added Component: Designator=C1(6-0805_MC)
+Added Component: Designator=C2(6-0805_MC)
+Added Component: Designator=C3(6-0805_MC)
+Added Component: Designator=C7(6-0805_MC)
+Added Component: Designator=C11(6-0805_MC)
+Added Component: Designator=C12(6-0805_MC)
+Added Pin To Net: NetName=5V Pin=J5-1
+Added Member To Class: ClassName=ESC3 Member=Component C1 Cap
+Added Member To Class: ClassName=ESC3 Member=Component C2 Cap
+Added Member To Class: ClassName=ESC3 Member=Component C3 Cap
+Added Member To Class: ClassName=ESC3 Member=Component C7 Cap
+Added Member To Class: ClassName=ESC3 Member=Component C11 Cap
+Added Member To Class: ClassName=ESC3 Member=Component C12 Cap

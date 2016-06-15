@@ -1,0 +1,24 @@
+Removed Pin From Net: NetName=PWM_CH2 Pin=JP1-1
+Removed Pin From Net: NetName=SCL Pin=JP4-1
+Removed Pin From Net: NetName=SCL Pin=JP6-1
+Removed Pin From Net: NetName=PWM_CH0 Pin=JP7-1
+Removed Pin From Net: NetName=PWM_CH1 Pin=JP8-1
+Removed Pin From Net: NetName=SCL Pin=JP12-1
+Removed Pin From Net: NetName=SCL Pin=JP15-1
+Removed Pin From Net: NetName=PWM_CH3 Pin=JP16-1
+Removed Member From Class: ClassName=Flight_Controller2 Member=JP1
+Removed Member From Class: ClassName=Flight_Controller2 Member=JP4
+Removed Member From Class: ClassName=Flight_Controller2 Member=JP6
+Removed Member From Class: ClassName=Flight_Controller2 Member=JP7
+Removed Member From Class: ClassName=Flight_Controller2 Member=JP8
+Removed Member From Class: ClassName=Flight_Controller2 Member=JP12
+Removed Member From Class: ClassName=Flight_Controller2 Member=JP15
+Removed Member From Class: ClassName=Flight_Controller2 Member=JP16
+Added Pin To Net: NetName=NetP9_1 Pin=P9-1
+Added Net: Name=NetP9_1
+Added Pin To Net: NetName=NetP9_2 Pin=P9-2
+Added Net: Name=NetP9_2
+Added Pin To Net: NetName=NetP10_1 Pin=P10-1
+Added Net: Name=NetP10_1
+Added Pin To Net: NetName=NetP10_2 Pin=P10-2
+Added Net: Name=NetP10_2

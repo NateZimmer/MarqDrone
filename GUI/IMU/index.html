@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="boxstyles.css">
+ <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+	<div id="Banner"><p id="BannerT">IMU Sim</p></div>
+	<div id="Bodys">
+	<br>
+	</div>
+
+	<div id="Content" style="margin-left:5pt">
+	
+		<div id="FullCube" class="containerBox" style="width:400px">
+			<div class="titleB">IMU Cube</div>
+			<section class="container">
+			<div id="cube" class="show-front">
+			  <figure class="front">1</figure>
+			  <figure class="back">2</figure>
+			  <figure class="right">3</figure>
+			  <figure class="left">4</figure>
+			  <figure class="top">5</figure>
+			  <figure class="bottom">6</figure>
+			</div>
+			</section>
+
+			<div id="mySliders">
+			Pitch: <input type="range" id="sl1" value="0" max="360" min="0" name="slider1" ></input> <span id=s1>0</span> deg <br>
+			Yaw: <input type="range" id="sl2" value="0" max="360" min="0" name="slider2" ></input> <span id=s2>0</span> deg <br>
+			Roll: <input type="range" id="sl3" value="0" max="360" min="0" name="slider3" ></input> <span id=s3>0</span> deg <br>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="myScript.js"></script>
+
+</div>
+
+
+</body>
+
+
+<footer>
+
+</footer> 
+
+
+
+</html>

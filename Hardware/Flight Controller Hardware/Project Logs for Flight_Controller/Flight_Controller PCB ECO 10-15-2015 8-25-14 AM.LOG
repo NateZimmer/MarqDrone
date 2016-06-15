@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GDO0 Pin=U1-59
+Removed Pin From Net: NetName=GDO2 Pin=U1-60
+Removed Pin From Net: NetName=NCS1 Pin=U1-61
+Added Pin To Net: NetName=NCS1 Pin=U1-59
+Added Pin To Net: NetName=GDO0 Pin=U1-60
+Added Pin To Net: NetName=GDO2 Pin=U1-61

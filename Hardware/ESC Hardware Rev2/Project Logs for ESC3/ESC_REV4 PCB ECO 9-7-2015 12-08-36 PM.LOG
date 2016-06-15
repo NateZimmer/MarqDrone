@@ -1,0 +1,9 @@
+Added Component: Designator=P1(HDR1X3)
+Added Pin To Net: NetName=GND Pin=P1-1
+Added Pin To Net: NetName=SCL Pin=P1-3
+Added Pin To Net: NetName=SCL Pin=U2-20
+Added Net: Name=SCL
+Added Pin To Net: NetName=SDA Pin=P1-2
+Added Pin To Net: NetName=SDA Pin=U2-21
+Added Net: Name=SDA
+Added Member To Class: ClassName=ESC3 Member=Component P1 Header 3

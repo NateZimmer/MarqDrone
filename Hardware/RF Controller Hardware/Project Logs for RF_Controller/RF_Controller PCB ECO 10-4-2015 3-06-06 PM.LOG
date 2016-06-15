@@ -1,0 +1,35 @@
+Removed Pin From Net: NetName=3.3V Pin=C24-2
+Removed Pin From Net: NetName=3.3V Pin=C25-2
+Removed Pin From Net: NetName=3.3V Pin=C28-2
+Removed Pin From Net: NetName=3.3V Pin=C32-1
+Removed Pin From Net: NetName=3.3V Pin=L2-2
+Removed Pin From Net: NetName=3.3V Pin=R43-2
+Removed Pin From Net: NetName=3.3V Pin=U2-3
+Removed Pin From Net: NetName=3.3V Pin=U2-30
+Removed Pin From Net: NetName=3.3V Pin=U2-48
+Added Component: Designator=C33(1608[0603]C)
+Added Component: Designator=C34(C0805)
+Added Component: Designator=L3(1608[0603]R)
+Added Component: Designator=L6(1608[0603]R)
+Added Pin To Net: NetName=3.3V Pin=C33-1
+Added Pin To Net: NetName=GND Pin=C33-2
+Added Pin To Net: NetName=GND Pin=C34-2
+Added Pin To Net: NetName=3.3V Pin=L3-2
+Added Pin To Net: NetName=3.3VB Pin=L6-1
+Added Pin To Net: NetName=3.3VC Pin=C24-2
+Added Pin To Net: NetName=3.3VC Pin=C25-2
+Added Pin To Net: NetName=3.3VC Pin=C28-2
+Added Pin To Net: NetName=3.3VC Pin=C32-1
+Added Pin To Net: NetName=3.3VC Pin=C34-1
+Added Pin To Net: NetName=3.3VC Pin=L2-2
+Added Pin To Net: NetName=3.3VC Pin=L3-1
+Added Pin To Net: NetName=3.3VC Pin=L6-2
+Added Pin To Net: NetName=3.3VC Pin=R43-2
+Added Pin To Net: NetName=3.3VC Pin=U2-3
+Added Pin To Net: NetName=3.3VC Pin=U2-30
+Added Pin To Net: NetName=3.3VC Pin=U2-48
+Added Net: Name=3.3VC
+Added Member To Class: ClassName=RF_Controller Member=Component C33 0805
+Added Member To Class: ClassName=RF_Controller Member=Component C34 0805
+Added Member To Class: ClassName=RF_Controller Member=Component L3 10nH
+Added Member To Class: ClassName=RF_Controller Member=Component L6 10nH

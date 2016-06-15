@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=A_FB Pin=R27-1
+Removed Pin From Net: NetName=B_FB Pin=R36-1
+Removed Pin From Net: NetName=C_FB Pin=R38-1
+Removed Member From Class: ClassName=ESC3 Member=R27
+Removed Member From Class: ClassName=ESC3 Member=R36
+Removed Member From Class: ClassName=ESC3 Member=R38
+Added Pin To Net: NetName=A_FB Pin=U2-18
+Added Pin To Net: NetName=C_FB Pin=U2-51
+Added Pin To Net: NetName=B_FB Pin=U2-52
+Change Net Name : Old Net Name=A_FB New Net Name=A_BLMA
+Change Net Name : Old Net Name=B_FB New Net Name=B_BLMA
+Change Net Name : Old Net Name=C_FB New Net Name=C_BLMA

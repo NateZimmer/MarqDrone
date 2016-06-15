@@ -1,0 +1,560 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 { 
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body { 
+			font-family : segoe ui;
+		}
+
+		td, th {  
+			padding: 0.5em;
+			text-align : left;
+		}
+		th { 
+			background-color : #EEEEEE;
+		
+		}
+		th.column1, td.column1 { 
+			width : 50%; 
+		}
+
+        th.column2, td.column2 {
+            width : 25%;
+        }
+
+		table { 
+			width : 100%; 
+            font-size: 0.9em;
+		}
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 5em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error { 
+			color : red;
+			font-weight : bold;
+		}	
+		tr.onmouseout_odd { 
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+			
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);		
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {	
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}	
+	</script><title>Net Status Report</title>
+</head>
+<body onload="document.getElementById('radio_mm').click()"><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD15\Templates\AD_logo.png
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Net Status Report</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">10/15/2015</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2:56:06 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc" class="file"><acronym title="C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc">C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc</acronym></a></td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Units:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">
+<form><input type="radio" name="radio_units" id="radio_mm" onclick="changeUnits(this, 'mm')">mm<input type="radio" name="radio_units" id="radio_mil" onclick="changeUnits(this, 'mil')">mils</form>
+</td>
+</tr>
+</table><a name="IDRHJPYM35F40KBRJYED5GOHVAOF3DEFNMKMSNTVZ0YJT3TPIUKIJ"><table>
+<tr>
+<th class="column1">Nets</th>
+<th class="column2">Layer</th>
+<th class="column3">Length</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17624.921mil|Location2.X=20546.297mil|Location1.Y=12363.11mil|Location2.Y=13441.982mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17624.921mil|Location2.X=20546.297mil|Location1.Y=12363.11mil|Location2.Y=13441.982mil|Absolute=True">12MHZ_XIN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17662.323mil|Location2.X=20546.297mil|Location1.Y=12430.04mil|Location2.Y=13441.982mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17662.323mil|Location2.X=20546.297mil|Location1.Y=12430.04mil|Location2.Y=13441.982mil|Absolute=True">12MHZ_XOUT</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17221.378mil|Location2.X=26920.301mil|Location1.Y=12430.014mil|Location2.Y=13441.982mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17221.378mil|Location2.X=26920.301mil|Location1.Y=12430.014mil|Location2.Y=13441.982mil|Absolute=True">3.3V</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20626.848mil|Location2.X=29026.595mil|Location1.Y=12731.195mil|Location2.Y=13445.917mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20626.848mil|Location2.X=29026.595mil|Location1.Y=12731.195mil|Location2.Y=13445.917mil|Absolute=True">5V</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17526.496mil|Location2.X=23050.229mil|Location1.Y=12489.094mil|Location2.Y=12969.541mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17526.496mil|Location2.X=23050.229mil|Location1.Y=12489.094mil|Location2.Y=12969.541mil|Absolute=True">B_LED</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17428.071mil|Location2.X=20923.265mil|Location1.Y=12762.691mil|Location2.Y=13022.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17428.071mil|Location2.X=20923.265mil|Location1.Y=12762.691mil|Location2.Y=13022.717mil|Absolute=True">GDO0</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17408.386mil|Location2.X=20894.722mil|Location1.Y=12856.195mil|Location2.Y=13022.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17408.386mil|Location2.X=20894.722mil|Location1.Y=12856.195mil|Location2.Y=13022.717mil|Absolute=True">GDO2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16924.016mil|Location2.X=27412.426mil|Location1.Y=12363.11mil|Location2.Y=14064.055mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16924.016mil|Location2.X=27412.426mil|Location1.Y=12363.11mil|Location2.Y=14064.055mil|Absolute=True">GND</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1256000">3.1902mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17565.866mil|Location2.X=24227.392mil|Location1.Y=12489.094mil|Location2.Y=12969.541mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17565.866mil|Location2.X=24227.392mil|Location1.Y=12489.094mil|Location2.Y=12969.541mil|Absolute=True">G_LED</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17428.071mil|Location2.X=20017.952mil|Location1.Y=12489.094mil|Location2.Y=13247.887mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17428.071mil|Location2.X=20017.952mil|Location1.Y=12489.094mil|Location2.Y=13247.887mil|Absolute=True">K22F_SWD_CLK</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17329.646mil|Location2.X=20894.722mil|Location1.Y=12875.88mil|Location2.Y=13022.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17329.646mil|Location2.X=20894.722mil|Location1.Y=12875.88mil|Location2.Y=13022.717mil|Absolute=True">MISO1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17565.866mil|Location2.X=21938.027mil|Location1.Y=12930.039mil|Location2.Y=13022.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17565.866mil|Location2.X=21938.027mil|Location1.Y=12930.039mil|Location2.Y=13022.717mil|Absolute=True">MISO2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17349.331mil|Location2.X=20923.265mil|Location1.Y=12924.108mil|Location2.Y=13022.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17349.331mil|Location2.X=20923.265mil|Location1.Y=12924.108mil|Location2.Y=13022.717mil|Absolute=True">MOSI1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17585.551mil|Location2.X=21969.523mil|Location1.Y=12838.368mil|Location2.Y=13022.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17585.551mil|Location2.X=21969.523mil|Location1.Y=12838.368mil|Location2.Y=13022.717mil|Absolute=True">MOSI2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17546.181mil|Location2.X=22017.397mil|Location1.Y=12838.368mil|Location2.Y=13022.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17546.181mil|Location2.X=22017.397mil|Location1.Y=12838.368mil|Location2.Y=13022.717mil|Absolute=True">MPU_INT</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17388.701mil|Location2.X=20942.95mil|Location1.Y=12762.691mil|Location2.Y=13022.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17388.701mil|Location2.X=20942.95mil|Location1.Y=12762.691mil|Location2.Y=13022.717mil|Absolute=True">NCS1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17526.496mil|Location2.X=21969.523mil|Location1.Y=12930.039mil|Location2.Y=13022.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17526.496mil|Location2.X=21969.523mil|Location1.Y=12930.039mil|Location2.Y=13022.717mil|Absolute=True">NCS2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20178.436mil|Location2.X=20502.991mil|Location1.Y=12920.045mil|Location2.Y=12969.542mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20178.436mil|Location2.X=20502.991mil|Location1.Y=12920.045mil|Location2.Y=12969.542mil|Absolute=True">NetC10_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18922.128mil|Location2.X=20894.722mil|Location1.Y=12816.825mil|Location2.Y=12969.542mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18922.128mil|Location2.X=20894.722mil|Location1.Y=12816.825mil|Location2.Y=12969.542mil|Absolute=True">NetC18_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20154.409mil|Location2.X=21953.775mil|Location1.Y=12838.368mil|Location2.Y=12969.542mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20154.409mil|Location2.X=21953.775mil|Location1.Y=12838.368mil|Location2.Y=12969.542mil|Absolute=True">NetC19_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20204.026mil|Location2.X=21168.343mil|Location1.Y=12888.675mil|Location2.Y=12946.045mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20204.026mil|Location2.X=21168.343mil|Location1.Y=12888.675mil|Location2.Y=12946.045mil|Absolute=True">NetC1_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">NetC23_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19709.528mil|Location2.X=20962.635mil|Location1.Y=12762.691mil|Location2.Y=12969.542mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19709.528mil|Location2.X=20962.635mil|Location1.Y=12762.691mil|Location2.Y=12969.542mil|Absolute=True">NetC26_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19839.449mil|Location2.X=21002.005mil|Location1.Y=12762.691mil|Location2.Y=12979.384mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19839.449mil|Location2.X=21002.005mil|Location1.Y=12762.691mil|Location2.Y=12979.384mil|Absolute=True">NetC27_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=24910.304mil|Location2.X=25075.816mil|Location1.Y=12805.998mil|Location2.Y=12914.423mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=24910.304mil|Location2.X=25075.816mil|Location1.Y=12805.998mil|Location2.Y=12914.423mil|Absolute=True">NetD2_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=23004.796mil|Location2.X=25138.808mil|Location1.Y=12872.927mil|Location2.Y=12973.478mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=23004.796mil|Location2.X=25138.808mil|Location1.Y=12872.927mil|Location2.Y=12973.478mil|Absolute=True">NetD2_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=24181.959mil|Location2.X=25075.816mil|Location1.Y=12872.927mil|Location2.Y=12973.478mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=24181.959mil|Location2.X=25075.816mil|Location1.Y=12872.927mil|Location2.Y=12973.478mil|Absolute=True">NetD2_4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16926.378mil|Location2.X=20955.745mil|Location1.Y=12729.528mil|Location2.Y=13441.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16926.378mil|Location2.X=20955.745mil|Location1.Y=12729.528mil|Location2.Y=13441.981mil|Absolute=True">NetJ1_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">NetP2_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">NetP3_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">NetP3_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">NetP4_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">NetP4_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">NetP5_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18792.206mil|Location2.X=19546.299mil|Location1.Y=12897.73mil|Location2.Y=12969.541mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18792.206mil|Location2.X=19546.299mil|Location1.Y=12897.73mil|Location2.Y=12969.541mil|Absolute=True">NetP5_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">NetP6_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18922.127mil|Location2.X=19810.078mil|Location1.Y=12897.73mil|Location2.Y=12969.541mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18922.127mil|Location2.X=19810.078mil|Location1.Y=12897.73mil|Location2.Y=12969.541mil|Absolute=True">NetP6_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">NetR161_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20962.478mil|Location2.X=20982.32mil|Location1.Y=12924.108mil|Location2.Y=12969.541mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20962.478mil|Location2.X=20982.32mil|Location1.Y=12924.108mil|Location2.Y=12969.541mil|Absolute=True">NetR16_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17662.323mil|Location2.X=21195.902mil|Location1.Y=12813.898mil|Location2.Y=12914.423mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17662.323mil|Location2.X=21195.902mil|Location1.Y=12813.898mil|Location2.Y=12914.423mil|Absolute=True">PWM_CH0</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17662.323mil|Location2.X=21325.823mil|Location1.Y=12833.583mil|Location2.Y=12914.423mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17662.323mil|Location2.X=21325.823mil|Location1.Y=12833.583mil|Location2.Y=12914.423mil|Absolute=True">PWM_CH1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17662.323mil|Location2.X=18837.639mil|Location1.Y=12853.268mil|Location2.Y=12914.423mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17662.323mil|Location2.X=18837.639mil|Location1.Y=12853.268mil|Location2.Y=12914.423mil|Absolute=True">PWM_CH2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17624.921mil|Location2.X=18967.56mil|Location1.Y=12872.927mil|Location2.Y=13022.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17624.921mil|Location2.X=18967.56mil|Location1.Y=12872.927mil|Location2.Y=13022.717mil|Absolute=True">PWM_CH3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20229.995mil|Location2.X=21056.139mil|Location1.Y=12856.195mil|Location2.Y=12946.045mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20229.995mil|Location2.X=21056.139mil|Location1.Y=12856.195mil|Location2.Y=12946.045mil|Absolute=True">RF_N</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20229.995mil|Location2.X=21056.139mil|Location1.Y=12836.51mil|Location2.Y=12985.73mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20229.995mil|Location2.X=21056.139mil|Location1.Y=12836.51mil|Location2.Y=12985.73mil|Absolute=True">RF_P</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17662.323mil|Location2.X=20017.952mil|Location1.Y=12617.047mil|Location2.Y=13397.887mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17662.323mil|Location2.X=20017.952mil|Location1.Y=12617.047mil|Location2.Y=13397.887mil|Absolute=True">RST_TGTMCU</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17546.181mil|Location2.X=24955.737mil|Location1.Y=12489.094mil|Location2.Y=12969.541mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17546.181mil|Location2.X=24955.737mil|Location1.Y=12489.094mil|Location2.Y=12969.541mil|Absolute=True">R_LED</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17221.378mil|Location2.X=22554.167mil|Location1.Y=12872.927mil|Location2.Y=13386.863mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17221.378mil|Location2.X=22554.167mil|Location1.Y=12872.927mil|Location2.Y=13386.863mil|Absolute=True">SCL</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17369.016mil|Location2.X=20894.722mil|Location1.Y=12895.565mil|Location2.Y=13022.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17369.016mil|Location2.X=20894.722mil|Location1.Y=12895.565mil|Location2.Y=13022.717mil|Absolute=True">SCLK1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17605.236mil|Location2.X=21953.775mil|Location1.Y=12930.039mil|Location2.Y=13022.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17605.236mil|Location2.X=21953.775mil|Location1.Y=12930.039mil|Location2.Y=13022.717mil|Absolute=True">SCLK2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17221.378mil|Location2.X=22424.246mil|Location1.Y=12872.927mil|Location2.Y=13386.863mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17221.378mil|Location2.X=22424.246mil|Location1.Y=12872.927mil|Location2.Y=13386.863mil|Absolute=True">SDA</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20327.637mil|Location2.X=20373.07mil|Location1.Y=12928.046mil|Location2.Y=12969.542mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20327.637mil|Location2.X=20373.07mil|Location1.Y=12928.046mil|Location2.Y=12969.542mil|Absolute=True">SMA_IN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17487.126mil|Location2.X=20017.952mil|Location1.Y=12489.094mil|Location2.Y=13197.887mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17487.126mil|Location2.X=20017.952mil|Location1.Y=12489.094mil|Location2.Y=13197.887mil|Absolute=True">SWD_DIO_TGTMCU</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16965.748mil|Location2.X=19625.039mil|Location1.Y=12755.118mil|Location2.Y=13441.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16965.748mil|Location2.X=19625.039mil|Location1.Y=12755.118mil|Location2.Y=13441.981mil|Absolute=True">USB_MCU_N</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16926.378mil|Location2.X=19491.181mil|Location1.Y=12780.709mil|Location2.Y=13441.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16926.378mil|Location2.X=19491.181mil|Location1.Y=12780.709mil|Location2.Y=13441.981mil|Absolute=True">USB_MCU_P</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17221.378mil|Location2.X=20825.824mil|Location1.Y=12774.528mil|Location2.Y=13441.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17221.378mil|Location2.X=20825.824mil|Location1.Y=12774.528mil|Location2.Y=13441.981mil|Absolute=True">USB_PWR</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=21666.654mil|Location2.X=28951.792mil|Location1.Y=12731.195mil|Location2.Y=14167.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=21666.654mil|Location2.X=28951.792mil|Location1.Y=12731.195mil|Location2.Y=14167.992mil|Absolute=True">VBAT</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18622.916mil|Location2.X=29205.65mil|Location1.Y=12467.416mil|Location2.Y=12948.793mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18622.916mil|Location2.X=29205.65mil|Location1.Y=12467.416mil|Location2.Y=12948.793mil|Absolute=True">VP1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="0">0mm
+			</a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

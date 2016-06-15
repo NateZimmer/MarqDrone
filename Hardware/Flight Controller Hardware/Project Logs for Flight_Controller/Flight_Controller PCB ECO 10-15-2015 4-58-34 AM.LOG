@@ -1,0 +1,94 @@
+Removed Pin From Net: NetName=SDA Pin=R5-1
+Removed Pin From Net: NetName=SCL Pin=R6-1
+Removed Pin From Net: NetName=SDA Pin=R7-1
+Removed Pin From Net: NetName=SCL Pin=R8-1
+Removed Pin From Net: NetName=PWM_CH0 Pin=R9-1
+Removed Pin From Net: NetName=PWM_CH1 Pin=R10-1
+Removed Pin From Net: NetName=SDA Pin=R13-1
+Removed Pin From Net: NetName=NetJP2_2 Pin=R13-2
+Removed Pin From Net: NetName=SDA Pin=R15-1
+Removed Pin From Net: NetName=PWM_CH3 Pin=R18-1
+Removed Pin From Net: NetName=SCL Pin=R24-1
+Removed Pin From Net: NetName=NetJP1_2 Pin=R24-2
+Removed Pin From Net: NetName=SCL Pin=R25-1
+Removed Member From Class: ClassName=Flight_Controller2 Member=R5
+Removed Member From Class: ClassName=Flight_Controller2 Member=R6
+Removed Member From Class: ClassName=Flight_Controller2 Member=R7
+Removed Member From Class: ClassName=Flight_Controller2 Member=R8
+Removed Member From Class: ClassName=Flight_Controller2 Member=R9
+Removed Member From Class: ClassName=Flight_Controller2 Member=R10
+Removed Member From Class: ClassName=Flight_Controller2 Member=R11
+Removed Member From Class: ClassName=Flight_Controller2 Member=R12
+Removed Member From Class: ClassName=Flight_Controller2 Member=R13
+Removed Member From Class: ClassName=Flight_Controller2 Member=R15
+Removed Member From Class: ClassName=Flight_Controller2 Member=R18
+Removed Member From Class: ClassName=Flight_Controller2 Member=R20
+Removed Member From Class: ClassName=Flight_Controller2 Member=R24
+Removed Member From Class: ClassName=Flight_Controller2 Member=R25
+Added Component: Designator=JP3(Jump)
+Added Component: Designator=JP4(Jump)
+Added Component: Designator=JP5(Jump)
+Added Component: Designator=JP6(Jump)
+Added Component: Designator=JP7(Jump)
+Added Component: Designator=JP8(Jump)
+Added Component: Designator=JP9(Jump)
+Added Component: Designator=JP10(Jump)
+Added Component: Designator=JP11(Jump)
+Added Component: Designator=JP12(Jump)
+Added Component: Designator=JP13(Jump)
+Added Component: Designator=JP14(Jump)
+Added Component: Designator=JP15(Jump)
+Added Component: Designator=JP16(Jump)
+Added Component: Designator=JP17(Jump)
+Added Pin To Net: NetName=SDA Pin=JP3-1
+Added Pin To Net: NetName=SCL Pin=JP4-1
+Added Pin To Net: NetName=SDA Pin=JP5-1
+Added Pin To Net: NetName=SCL Pin=JP6-1
+Added Pin To Net: NetName=PWM_CH0 Pin=JP7-1
+Added Pin To Net: NetName=PWM_CH1 Pin=JP8-1
+Added Pin To Net: NetName=SDA Pin=JP11-1
+Added Pin To Net: NetName=NetJP2_2 Pin=JP11-2
+Added Pin To Net: NetName=SCL Pin=JP12-1
+Added Pin To Net: NetName=NetJP1_2 Pin=JP12-2
+Added Pin To Net: NetName=SDA Pin=JP14-1
+Added Pin To Net: NetName=SCL Pin=JP15-1
+Added Pin To Net: NetName=PWM_CH3 Pin=JP16-1
+Added Pin To Net: NetName=NetJP3_2 Pin=JP3-2
+Added Pin To Net: NetName=NetJP3_2 Pin=JP9-2
+Added Pin To Net: NetName=NetJP3_2 Pin=P3-2
+Added Net: Name=NetJP3_2
+Added Pin To Net: NetName=NetJP4_2 Pin=JP4-2
+Added Pin To Net: NetName=NetJP4_2 Pin=JP7-2
+Added Pin To Net: NetName=NetJP4_2 Pin=P3-3
+Added Net: Name=NetJP4_2
+Added Pin To Net: NetName=NetJP5_2 Pin=JP5-2
+Added Pin To Net: NetName=NetJP5_2 Pin=JP10-2
+Added Pin To Net: NetName=NetJP5_2 Pin=P4-2
+Added Net: Name=NetJP5_2
+Added Pin To Net: NetName=NetJP6_2 Pin=JP6-2
+Added Pin To Net: NetName=NetJP6_2 Pin=JP8-2
+Added Pin To Net: NetName=NetJP6_2 Pin=P4-3
+Added Net: Name=NetJP6_2
+Added Pin To Net: NetName=NetJP14_2 Pin=JP14-2
+Added Pin To Net: NetName=NetJP14_2 Pin=JP17-2
+Added Pin To Net: NetName=NetJP14_2 Pin=P6-2
+Added Net: Name=NetJP14_2
+Added Pin To Net: NetName=NetJP15_2 Pin=JP15-2
+Added Pin To Net: NetName=NetJP15_2 Pin=JP16-2
+Added Pin To Net: NetName=NetJP15_2 Pin=P6-3
+Added Net: Name=NetJP15_2
+Added Member To Class: ClassName=Flight_Controller2 Member=Component JP3 Jump
+Added Member To Class: ClassName=Flight_Controller2 Member=Component JP4 Jump
+Added Member To Class: ClassName=Flight_Controller2 Member=Component JP5 Jump
+Added Member To Class: ClassName=Flight_Controller2 Member=Component JP6 Jump
+Added Member To Class: ClassName=Flight_Controller2 Member=Component JP7 Jump
+Added Member To Class: ClassName=Flight_Controller2 Member=Component JP8 Jump
+Added Member To Class: ClassName=Flight_Controller2 Member=Component JP9 Jump
+Added Member To Class: ClassName=Flight_Controller2 Member=Component JP10 Jump
+Added Member To Class: ClassName=Flight_Controller2 Member=Component JP11 Jump
+Added Member To Class: ClassName=Flight_Controller2 Member=Component JP12 Jump
+Added Member To Class: ClassName=Flight_Controller2 Member=Component JP13 Jump
+Added Member To Class: ClassName=Flight_Controller2 Member=Component JP14 Jump
+Added Member To Class: ClassName=Flight_Controller2 Member=Component JP15 Jump
+Added Member To Class: ClassName=Flight_Controller2 Member=Component JP16 Jump
+Added Member To Class: ClassName=Flight_Controller2 Member=Component JP17 Jump

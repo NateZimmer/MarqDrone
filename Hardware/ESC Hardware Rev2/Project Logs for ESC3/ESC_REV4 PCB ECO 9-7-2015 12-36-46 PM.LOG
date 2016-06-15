@@ -1,0 +1,7 @@
+Added Component: Designator=J5(USB_Micro_Vertical)
+Added Pin To Net: NetName=USB_MCU_N Pin=J5-2
+Added Pin To Net: NetName=USB_MCU_P Pin=J5-3
+Added Pin To Net: NetName=GND Pin=J5-5
+Added Pin To Net: NetName=GND Pin=J5-Z1
+Added Pin To Net: NetName=GND Pin=J5-Z2
+Added Member To Class: ClassName=ESC3 Member=Component J5 614105150721

@@ -1,0 +1,71 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Z\Desktop\1MarquetteFIles\ESC_Code\ESC_Rev2\Testo2.PcbDoc
+Date     : 9/7/2015
+Time     : 7:42:59 PM
+
+Processing Rule : Clearance Constraint (Gap=0.381mm) (InComponent('J13') OR InComponent('J16') OR InComponent('J7')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.381mm) (InComponent('H1') OR InComponent('H3') OR InComponent('H4') OR InComponent('H5') OR InComponent('H6') OR InComponent('H7') OR InComponent('H8') OR InComponent('H9')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.216mm) ((OnLayer('Test Planea')OR OnLayer('Test Plane'))),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.178mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.152mm) (Max=2.032mm) (Preferred=0.203mm) (InNet('GND'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.152mm) (Max=1.016mm) (Preferred=0.305mm) (InNet('3.3V'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.152mm) (Max=1.016mm) (Preferred=0.305mm) (InNet('5V'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.152mm) (Max=2.032mm) (Preferred=0.203mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.508mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=6.35mm) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.305mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.152mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0.025mm) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0.025mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Silk primitive without silk layer
+Rule Violations :0
+
+Processing Rule : SMD Entry (Side = Allowed) (Corner = Not Allowed) (Any Angle = Allowed) (Ignore First Corner = Allowed)
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+
+Violations Detected : 0
+Time Elapsed        : 00:00:02

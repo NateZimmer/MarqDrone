@@ -1,0 +1,70 @@
+Removed Pin From Net: NetName=VP1 Pin=Q7-4
+Removed Pin From Net: NetName=OUT2 Pin=Q8-3
+Removed Pin From Net: NetName=VP1 Pin=Q8-4
+Removed Pin From Net: NetName=OUT3 Pin=Q9-3
+Removed Pin From Net: NetName=VP1 Pin=Q9-4
+Removed Pin From Net: NetName=GND Pin=Q10-3
+Removed Pin From Net: NetName=OUT2 Pin=Q10-4
+Removed Pin From Net: NetName=GND Pin=Q11-3
+Removed Pin From Net: NetName=OUT3 Pin=Q11-4
+Removed Pin From Net: NetName=GND Pin=Q13-3
+Removed Member From Class: ClassName=ESC3 Member=Q8
+Removed Member From Class: ClassName=ESC3 Member=Q9
+Removed Member From Class: ClassName=ESC3 Member=Q10
+Removed Member From Class: ClassName=ESC3 Member=Q11
+Removed Member From Class: ClassName=ESC3 Member=Q13
+Change Component DesignItemId : Designator=Q7 Old DesignItemId=NMOS-2 New DesignItemId=CMP-1258-00026-1
+Change Component Footprint: Designator=Q7 Old Footprint=TO228P970-3_4AM New Footprint=NXP-SOT1210_L
+Change Component Comment : Designator=Q7 Old Comment=NMOS-2 New Comment=PSMN011-60MLX
+Added Component: Designator=Q2(NXP-SOT1210_L)
+Added Component: Designator=Q3(NXP-SOT1210_L)
+Added Component: Designator=Q4(NXP-SOT1210_L)
+Added Component: Designator=Q6(NXP-SOT1210_L)
+Added Pin To Net: NetName=NetQ1_1 Pin=C13-2
+Added Pin To Net: NetName=NetQ1_1 Pin=C33-1
+Added Pin To Net: NetName=VP1 Pin=Q1-5
+Added Pin To Net: NetName=OUT2 Pin=Q2-1
+Added Pin To Net: NetName=OUT2 Pin=Q2-2
+Added Pin To Net: NetName=OUT2 Pin=Q2-3
+Added Pin To Net: NetName=VP1 Pin=Q2-5
+Added Pin To Net: NetName=OUT3 Pin=Q3-1
+Added Pin To Net: NetName=OUT3 Pin=Q3-2
+Added Pin To Net: NetName=OUT3 Pin=Q3-3
+Added Pin To Net: NetName=VP1 Pin=Q3-5
+Added Pin To Net: NetName=GND Pin=Q4-1
+Added Pin To Net: NetName=GND Pin=Q4-2
+Added Pin To Net: NetName=GND Pin=Q4-3
+Added Pin To Net: NetName=NetQ1_1 Pin=Q4-5
+Added Pin To Net: NetName=GND Pin=Q6-1
+Added Pin To Net: NetName=GND Pin=Q6-2
+Added Pin To Net: NetName=GND Pin=Q6-3
+Added Pin To Net: NetName=OUT2 Pin=Q6-5
+Added Pin To Net: NetName=GND Pin=Q7-1
+Added Pin To Net: NetName=GND Pin=Q7-2
+Added Pin To Net: NetName=GND Pin=Q7-3
+Added Pin To Net: NetName=OUT3 Pin=Q7-5
+Added Pin To Net: NetName=NetQ1_1 Pin=R28-1
+Added Pin To Net: NetName=NetQ1_1 Pin=U3-7
+Change Net Name : Old Net Name=NetQ1_1 New Net Name=OUT1
+Added Pin To Net: NetName=NetQ1_4 Pin=Q1-4
+Added Pin To Net: NetName=NetQ1_4 Pin=R21-1
+Added Net: Name=NetQ1_4
+Added Pin To Net: NetName=NetQ2_4 Pin=Q2-4
+Added Pin To Net: NetName=NetQ2_4 Pin=R22-1
+Added Net: Name=NetQ2_4
+Added Pin To Net: NetName=NetQ3_4 Pin=Q3-4
+Added Pin To Net: NetName=NetQ3_4 Pin=R23-1
+Added Net: Name=NetQ3_4
+Added Pin To Net: NetName=NetQ4_4 Pin=Q4-4
+Added Pin To Net: NetName=NetQ4_4 Pin=R24-1
+Added Net: Name=NetQ4_4
+Added Pin To Net: NetName=NetQ6_4 Pin=Q6-4
+Added Pin To Net: NetName=NetQ6_4 Pin=R25-1
+Added Net: Name=NetQ6_4
+Added Pin To Net: NetName=NetQ7_4 Pin=Q7-4
+Added Pin To Net: NetName=NetQ7_4 Pin=R26-1
+Added Net: Name=NetQ7_4
+Added Member To Class: ClassName=ESC3 Member=Component Q2 PSMN011-60MLX
+Added Member To Class: ClassName=ESC3 Member=Component Q3 PSMN011-60MLX
+Added Member To Class: ClassName=ESC3 Member=Component Q4 PSMN011-60MLX
+Added Member To Class: ClassName=ESC3 Member=Component Q6 PSMN011-60MLX

@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=A_BLMA Pin=U2-43
+Removed Pin From Net: NetName=B_BLMA Pin=U2-44
+Removed Pin From Net: NetName=C_BLMA Pin=U2-45
+Added Pin To Net: NetName=A_BLMA Pin=R27-2
+Added Pin To Net: NetName=B_BLMA Pin=R36-2
+Added Pin To Net: NetName=C_BLMA Pin=R38-2
+Added Pin To Net: NetName=A_BLML Pin=U3-2
+Added Pin To Net: NetName=A_BLMH Pin=U3-3
+Added Pin To Net: NetName=B_BLML Pin=U4-2
+Added Pin To Net: NetName=B_BLMH Pin=U4-3
+Added Pin To Net: NetName=C_BLML Pin=U5-2
+Added Pin To Net: NetName=C_BLMH Pin=U5-3

@@ -1,0 +1,3 @@
+Record=TopLevelDocument|FileName=Flight_Controller1.SchDoc
+Record=SheetSymbol|Record=SheetSymbol|SourceDocument=Flight_Controller1.SchDoc|Designator=FC_1|SchDesignator=FC_1|FileName=Flight_Controller2.SchDoc|SymbolType=Normal|RawFileName=Flight_Controller2.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|Record=SheetSymbol|SourceDocument=Flight_Controller1.SchDoc|Designator=FC_2|SchDesignator=FC_2|FileName=Flight_Controller3.SchDoc|SymbolType=Normal|RawFileName=Flight_Controller3.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 

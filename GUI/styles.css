@@ -1,0 +1,305 @@
+html {
+  height:100%;
+}
+
+
+head{
+	padding:0pt;
+	margin:0pt;	
+	display:none;
+	border: 0px none;
+}
+
+body{
+	/*background-color:#efefef; */
+	background-color:#EEE;
+	font-family:verdana; 
+	font-size: 12px;
+	overflow-y:scroll;
+	padding:0pt;
+	margin:0pt;
+	border:0px;
+	height:100%
+}
+
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4em;
+}
+.footer, .push {
+height: 4em;
+clear:both;
+width:100%;
+color:#FFF;
+}
+
+.footer{
+	background-color:#333;
+}
+
+#footerText{
+	padding-top:1em;
+	font-family: "lft-etica",sans-serif;
+	font-size:12px;
+	font-weight:400;
+}
+
+a:link
+{
+	color:#FFF;
+}
+
+a:visited
+{
+	color:#FFF;
+}
+
+footer
+{
+	padding:0pt;
+	float:bottom;
+	margin:0pt;
+}
+
+#Banner
+{
+	margin:0px;
+	padding:0px;
+	background-color:#333;
+	height:80px;
+	color:#FFF;
+	font-size:26px;
+	line-height:80px;
+	background: linear-gradient(#666, #000); 
+}
+
+#BannerT
+{
+	padding-left:10pt;
+	text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.3); 
+	font-style:italic;
+	font-family: "lft-etica",sans-serif;
+	font-weight:600;
+	text-transform: uppercase;
+	border: medium none;
+}
+
+.Navs{
+	background-color:#5c5c5c;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	color:white;
+	height:40px;
+	line-height:40px;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12) !important;
+}
+
+.Nav{
+	background-color:#444;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	color:white;
+	height:20px;
+	line-height:20px;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12) !important;
+}
+
+.NavButton{
+	float: left;
+	font-family: "lft-etica",sans-serif;
+    font-size: 12px;
+    background-color: #555;
+    color: #FFF;
+    border: 0px solid #555;
+	height: 40px;
+    width: auto;
+	height:100%;
+    cursor: pointer;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+	font-weight: 600;
+}
+
+
+.containerBox
+{
+	margin:5pt;
+	float:left;
+	height:auto;
+	background-color:#DDD;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+	display:block;
+	font-family: "lft-etica",sans-serif;
+	border-style: solid;
+    border-width: 1px;
+	border-color: #EEE;
+	font-size: 12px;
+	font-weight:600;
+	width:400px;
+	min-width=300px;
+	border-radius:10px;
+	resize: horizontal;
+}
+
+.metaDataText
+{
+	color:#82350b;
+	font-style:italic;
+}
+
+.titleB{
+	width:auto;
+	color:#FFF;
+	font-family: "lft-etica",sans-serif;
+	height:24px;
+	font-size: 11px;
+	font-style:italic;
+	background: linear-gradient(#888, #444); 
+	box-shadow: 0px 2px 5px #FFF,inset 0px 12px 0px rgba(255, 255, 255, 0.1);
+	line-height:24px;
+	text-align:center;
+	font-weight:800;
+	text-shadow: 1px 1px 0px #000; 
+	border-radius:10px 10px 0px 0px;
+}
+
+.MyButton{
+	float: left;
+	font-family: "lft-etica",sans-serif;
+    font-size: 12px;
+    background-color: #555;
+    color: #FFF;
+    border: 1px solid #555;
+    padding: 0px 12px;
+	height: 24px;
+    width: auto;
+    cursor: pointer;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+	font-weight:600;
+	margin: 5px;
+	border-radius:3px;
+}
+
+.NavButton:Hover{
+	background-color: #FFF;
+	color: #000;
+}
+
+#textBox{
+	float: left;
+	font-family:tahoma; 
+    font-size: 12px;
+    border: 0px solid #555;
+    padding: 0px 12px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+	margin: 5px;
+	height:100px;
+	width:300px;
+}
+
+#baudRates{
+	width:60px;
+	line-height:24px;
+	font-size: 12px;
+	height:24px;
+	resize:none;
+}
+
+
+
+
+
+.MyButton:Hover{
+	background-color: #FFF;
+	color: #000;
+}
+
+#mySliders
+{
+	text-align:center;
+}
+
+#remoteValueDiv
+{
+	margin:10pt;
+	width:100px;
+	float:left;
+}
+
+input{
+	text-align:center;
+}
+
+p {
+	margin:0px;
+	padding:0px;
+}
+
+.StickFig{
+	  width: 10px;
+	  height:10px;
+	  line-height: 10px;
+	  background: hsla(  60, 100%, 50%, 0.7 );
+	  transform: translateX(  45px ) translateY(  45px ); 
+	  border-style: none;
+	  border-radius:5px;
+}
+
+.stickContainer {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  float: left;
+  perspective: 0;
+  margin: 10px;
+  outline:solid;
+  background-color: #434343;
+  background-image:linear-gradient(#434343, #282828);
+}
+
+.stickGrid {
+	background-color: transparent;
+	background-image:       linear-gradient(0deg, transparent 49px, rgba(255, 255, 255, .50) 50px, transparent 51px), linear-gradient(90deg, transparent 49px, rgba(255, 255, 255, .50) 50px, transparent 51px);
+	height:100%;
+	background-size:100px 100px;
+}
+
+.stickContainers {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 0 auto 40px;
+  perspective: 0;
+  margin-top:50px;
+  margin-bottom:100px;
+  border-style: solid;
+}
+
+.myPlots{
+	width:380px; 
+	height:230px;
+ 	margin: auto;
+	background-color:#FFF;
+	margin:10px;
+}
+
+.flotr-legend {
+    padding: 2px;
+    left: 31px;
+    top: 20px;
+    border: 0;
+    
+    background-color: white;
+}
+  
+#serialComs{display:none;}
+#FullCube{display:none;}  
+#jPractice{display:none;}  
+#AccCube{display:none;}
+#GyroCube{display:none;}
+#MagCube{display:none;}
+#KCube{display:none;}
+

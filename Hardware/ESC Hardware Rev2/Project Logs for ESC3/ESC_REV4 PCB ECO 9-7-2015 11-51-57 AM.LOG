@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=VBAT Pin=V1-1
+Removed Pin From Net: NetName=5V Pin=V1-3
+Removed Pin From Net: NetName=GND Pin=V1-4
+Change Component DesignItemId : Designator=V1 Old DesignItemId=MCP1702 New DesignItemId=MCP1700
+Change Component Footprint: Designator=V1 Old Footprint=TO228P970-3_4AM New Footprint=SOT-23B_M
+Change Component Comment : Designator=V1 Old Comment=MC78M05 5V Reg New Comment=MCP1702T-5002E/CB
+Added Pin To Net: NetName=GND Pin=V1-1
+Added Pin To Net: NetName=5V Pin=V1-2
+Added Pin To Net: NetName=VBAT Pin=V1-3

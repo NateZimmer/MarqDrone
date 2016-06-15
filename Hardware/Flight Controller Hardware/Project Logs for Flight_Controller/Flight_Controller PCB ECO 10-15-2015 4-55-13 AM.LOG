@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=PWM_CH2 Pin=R17-1
+Removed Member From Class: ClassName=Flight_Controller2 Member=R17
+Removed Member From Class: ClassName=Flight_Controller2 Member=R19
+Added Component: Designator=JP1(Jump)
+Added Component: Designator=JP2(Jump)
+Added Pin To Net: NetName=PWM_CH2 Pin=JP1-1
+Added Pin To Net: NetName=NetJP1_2 Pin=JP1-2
+Added Pin To Net: NetName=NetJP1_2 Pin=P5-3
+Added Pin To Net: NetName=NetJP1_2 Pin=R24-2
+Added Net: Name=NetJP1_2
+Added Pin To Net: NetName=NetJP2_2 Pin=JP2-2
+Added Pin To Net: NetName=NetJP2_2 Pin=P5-2
+Added Pin To Net: NetName=NetJP2_2 Pin=R13-2
+Added Net: Name=NetJP2_2
+Added Member To Class: ClassName=Flight_Controller2 Member=Component JP1 Jump
+Added Member To Class: ClassName=Flight_Controller2 Member=Component JP2 Jump

@@ -1,0 +1,71 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc
+Date     : 10/28/2015
+Time     : 12:55:02 AM
+
+Processing Rule : Silk to Silk (Clearance=0.1mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : SMD Entry (Side = Allowed) (Corner = Not Allowed) (Any Angle = Allowed) (Ignore First Corner = Allowed)
+Rule Violations :0
+
+Processing Rule : Silk primitive without silk layer
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=1mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=6mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=12mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=250mil) (All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=20mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=6mil) (Max=80mil) (Preferred=8mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=6mil) (Max=40mil) (Preferred=12mil) (InNet('5V'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=6mil) (Max=40mil) (Preferred=12mil) (InNet('3.3V'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=6mil) (Max=80mil) (Preferred=8mil) (InNet('GND'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=8.5mil) ((OnLayer('Test Planea')OR OnLayer('Test Plane'))),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=15mil) (InComponent('H1') OR InComponent('H3') OR InComponent('H4') OR InComponent('H5') OR InComponent('H6') OR InComponent('H7') OR InComponent('H8') OR InComponent('H9')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=15mil) (InComponent('J13') OR InComponent('J16') OR InComponent('J7')),(All)
+Rule Violations :0
+
+
+Violations Detected : 0
+Time Elapsed        : 00:00:03

@@ -1,0 +1,53 @@
+Removed Pin From Net: NetName=GND Pin=C17-1
+Removed Pin From Net: NetName=EXTAL+ Pin=C17-2
+Removed Pin From Net: NetName=GND Pin=C18-1
+Removed Pin From Net: NetName=EXTAL- Pin=C18-2
+Removed Pin From Net: NetName=OUT1 Pin=P9-1
+Removed Pin From Net: NetName=OUT1 Pin=P9-1
+Removed Pin From Net: NetName=OUT1 Pin=P9-1
+Removed Pin From Net: NetName=OUT1 Pin=P9-1
+Removed Pin From Net: NetName=OUT1 Pin=P9-1
+Removed Pin From Net: NetName=OUT2 Pin=P10-1
+Removed Pin From Net: NetName=OUT2 Pin=P10-1
+Removed Pin From Net: NetName=OUT2 Pin=P10-1
+Removed Pin From Net: NetName=OUT2 Pin=P10-1
+Removed Pin From Net: NetName=OUT2 Pin=P10-1
+Removed Pin From Net: NetName=OUT3 Pin=P11-1
+Removed Pin From Net: NetName=OUT3 Pin=P11-1
+Removed Pin From Net: NetName=OUT3 Pin=P11-1
+Removed Pin From Net: NetName=OUT3 Pin=P11-1
+Removed Pin From Net: NetName=OUT3 Pin=P11-1
+Removed Pin From Net: NetName=CMP_OUT Pin=P12-1
+Removed Pin From Net: NetName=2H_EXTERN Pin=P12-2
+Removed Pin From Net: NetName=1L_EXTERN Pin=P12-3
+Removed Pin From Net: NetName=3A_EXTERN Pin=P12-4
+Removed Pin From Net: NetName=1H_EXTERN Pin=P12-5
+Removed Pin From Net: NetName=3L_EXTERN Pin=P12-6
+Removed Pin From Net: NetName=2A_EXTERN Pin=P12-7
+Removed Pin From Net: NetName=3H_EXTERN Pin=P12-8
+Removed Pin From Net: NetName=GND Pin=P12-10
+Removed Pin From Net: NetName=EXTAL+ Pin=R42-1
+Removed Pin From Net: NetName=EXTAL- Pin=R42-2
+Removed Member From Class: ClassName=ESC3 Member=C17
+Removed Member From Class: ClassName=ESC3 Member=C18
+Removed Member From Class: ClassName=ESC3 Member=P9
+Removed Member From Class: ClassName=ESC3 Member=P10
+Removed Member From Class: ClassName=ESC3 Member=P11
+Removed Member From Class: ClassName=ESC3 Member=P12
+Removed Member From Class: ClassName=ESC3 Member=R42
+Change Component Designator: OldDesignator=Q? NewDesignator=Q1
+Added Component: Designator=C4(1608[0603]C)
+Added Component: Designator=C5(1608[0603]C)
+Added Component: Designator=Y1(3225_Crystal)
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=EXTAL+ Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=EXTAL- Pin=C5-2
+Added Pin To Net: NetName=EXTAL+ Pin=Y1-1
+Added Pin To Net: NetName=GND Pin=Y1-2
+Added Pin To Net: NetName=EXTAL- Pin=Y1-3
+Added Pin To Net: NetName=GND Pin=Y1-4
+Change Net Name : Old Net Name=NetQ?_1 New Net Name=NetQ1_1
+Added Member To Class: ClassName=ESC3 Member=Component C4 CL05C180JB5NNNC
+Added Member To Class: ClassName=ESC3 Member=Component C5 CL05C180JB5NNNC
+Added Member To Class: ClassName=ESC3 Member=Component Y1 CX3225GB12000P0HPQCC

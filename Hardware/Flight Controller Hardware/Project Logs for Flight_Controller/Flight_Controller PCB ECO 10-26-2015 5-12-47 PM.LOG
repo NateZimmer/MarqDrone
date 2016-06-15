@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=GND Pin=P3-1
+Removed Pin From Net: NetName=SDA Pin=P3-2
+Removed Pin From Net: NetName=GND Pin=P4-1
+Removed Pin From Net: NetName=SDA Pin=P4-2
+Removed Pin From Net: NetName=GND Pin=P5-1
+Removed Pin From Net: NetName=SDA Pin=P5-2
+Removed Pin From Net: NetName=GND Pin=P6-1
+Removed Pin From Net: NetName=SDA Pin=P6-2
+Removed Member From Class: ClassName=Flight_Controller2 Member=P3
+Removed Member From Class: ClassName=Flight_Controller2 Member=P4
+Removed Member From Class: ClassName=Flight_Controller2 Member=P5
+Removed Member From Class: ClassName=Flight_Controller2 Member=P6

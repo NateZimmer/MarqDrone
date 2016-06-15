@@ -1,0 +1,10 @@
+Change Component Comment : Designator=C1 Old Comment=0805 New Comment=GRM1885C1H220FA01D
+Change Component Comment : Designator=D1 Old Comment=Bat54C New Comment=BAT54C-7-F
+Change Component Comment : Designator=P3 Old Comment=Header 3X2 New Comment=68021-406HLF
+Change Component Comment : Designator=P9 Old Comment=Header 3X2 New Comment=68021-406HLF
+Change Component Comment : Designator=P10 Old Comment=Header 3X2 New Comment=68021-406HLF
+Change Component Comment : Designator=H1 Old Comment=stand_off New Comment=R30-3001102
+Change Component Comment : Designator=H3 Old Comment=stand_off New Comment=R30-3001102
+Change Component Comment : Designator=H4 Old Comment=stand_off New Comment=R30-3001102
+Change Component Comment : Designator=H5 Old Comment=stand_off New Comment=R30-3001102
+Added Room: Name=Flight_Controller2

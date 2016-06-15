@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "MarqDrone",
+  "version": "1.4",
+  "icons": {
+    "128": "icon_128.png"
+  },
+ 
+  "permissions": [
+    "serial",
+	{"fileSystem": ["write", "retainEntries", "directory"]},
+    "storage",
+	"syncFileSystem"
+  ],
+  
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "minimum_chrome_version": "28"
+}

@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=SCL Pin=R6-1
+Removed Pin From Net: NetName=PWM_CH1 Pin=R6-3
+Removed Pin From Net: NetName=SCL Pin=R8-1
+Removed Pin From Net: NetName=PWM_CH2 Pin=R8-3
+Added Pin To Net: NetName=PWM_CH1 Pin=R6-1
+Added Pin To Net: NetName=SCL Pin=R6-3
+Added Pin To Net: NetName=PWM_CH2 Pin=R8-1
+Added Pin To Net: NetName=SCL Pin=R8-3

@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=GND Pin=C10-1
+Removed Pin From Net: NetName=GND Pin=C16-1
+Removed Member From Class: ClassName=Flight_Controller2 Member=C10
+Removed Member From Class: ClassName=Flight_Controller2 Member=C16
+Removed Member From Class: ClassName=Flight_Controller2 Member=R14
+Change Component Footprint: Designator=P1 Old Footprint=SMA New Footprint=SMA1
+Added Pin To Net: NetName=NetF1_1 Pin=F1-1
+Added Pin To Net: NetName=NetF1_1 Pin=P1-1
+Added Net: Name=NetF1_1

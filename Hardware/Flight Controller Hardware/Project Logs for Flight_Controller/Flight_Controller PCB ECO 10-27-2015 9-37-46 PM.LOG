@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=MOSI2 Pin=U2-9
+Removed Pin From Net: NetName=MISO2 Pin=U2-24
+Change Component Comment : Designator=L4 Old Comment=10nH New Comment=LQW18AN10NJ00D
+Change Component Comment : Designator=F1 Old Comment=BALUN_2_4_GHZ New Comment=2450BM15B0003E
+Change Component Comment : Designator=D1 Old Comment=Bat45C New Comment=Bat54C
+Change Component Comment : Designator=R6 Old Comment=PVZ3A103C01B00 New Comment=CIM10U800NC
+Change Component Comment : Designator=R7 Old Comment=PVZ3A103C01B00 New Comment=CIM10U800NC
+Change Component Comment : Designator=R8 Old Comment=PVZ3A103C01B00 New Comment=CIM10U800NC
+Change Component Comment : Designator=R9 Old Comment=PVZ3A103C01B00 New Comment=CIM10U800NC
+Added Pin To Net: NetName=3.3V Pin=C19-2
+Added Pin To Net: NetName=3.3V Pin=U2-1
+Added Pin To Net: NetName=3.3V Pin=U2-8
+Added Pin To Net: NetName=MISO2 Pin=U2-9
+Added Pin To Net: NetName=MOSI2 Pin=U2-24

@@ -1,0 +1,12 @@
+DRC Rules Export File for PCB: C:\Users\Z\Google Drive\1MarquetteFIles\ESC_Code\Flight_Controller\Flight_Controller.PcbDoc
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=5.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion_1|Scope=Board|Minimum=0.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=6.00
+RuleKind=Width|RuleName=Width_1|Scope=Board|Minimum=6.00
+RuleKind=Width|RuleName=Width_2|Scope=Board|Minimum=6.00
+RuleKind=Width|RuleName=Width_3|Scope=Board|Minimum=6.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=6.00
+RuleKind=Clearance|RuleName=Clearance_2|Scope=Board|Minimum=8.50
+RuleKind=Clearance|RuleName=Clearance_3|Scope=Board|Minimum=15.00
+RuleKind=Clearance|RuleName=Clearance_1|Scope=Board|Minimum=15.00

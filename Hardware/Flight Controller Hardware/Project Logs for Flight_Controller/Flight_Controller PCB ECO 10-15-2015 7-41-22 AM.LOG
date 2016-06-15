@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=C2 Old Footprint=6-0805_MC New Footprint=1608[0603]C
+Change Component Footprint: Designator=L1 Old Footprint=1608[0603]R New Footprint=1608[0603]L
+Change Component Comment : Designator=C2 Old Comment=GRM21BC81C106KE15L New Comment=CL10B104MB8NNNC

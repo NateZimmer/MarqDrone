@@ -1,0 +1,2 @@
+Change Component Footprint: Designator=P8 Old Footprint=GND_CLIP New Footprint=GND_CLIP3
+Change Component Comment : Designator=C22 Old Comment=CL10B102KB8SFNC New Comment=CL10B103KB8SFNC

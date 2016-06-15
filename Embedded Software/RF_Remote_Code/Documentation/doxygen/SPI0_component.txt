@@ -1,0 +1,263 @@
+/*!
+  \page SPI0 SPI0 (Init_SPI)
+**          This file implements the SPI (SPI0) module initialization
+**          according to the Peripheral Initialization settings, and
+**          defines interrupt service routines prototypes.
+**
+
+- \subpage SPI0_settings
+- \subpage SPI0_regs_overview  
+- \subpage SPI0_regs_details
+- \ref SPI0_module "Component documentation" 
+\page SPI0_regs_overview Registers Initialization Overview
+This page contains the initialization values for the registers of the peripheral(s) configured
+by the component. 
+<table>
+<tr><td colspan="4" class="ttitle1">SPI0 Initialization</td></tr>
+<tr><td class="ttitle2">Address</td><td class="ttitle2">Register</td><td class="ttitle2">Register Value</td><td class="ttitle2">Register Description</td></tr>
+<tr><td>0x40048034</td><td>SIM_SCGC4</td>
+<td class="regNotResetVal">0xF0440030</td>
+ <td>SIM_SCGC4 register, peripheral SPI0.</td></tr>
+<tr><td>0x40076000</td><td>SPI0_C1</td>
+<td class="regNotResetVal">0x0000005E</td>
+ <td>SPI0_C1 register, peripheral SPI0.</td></tr>
+<tr><td>0x40076001</td><td>SPI0_C2</td>
+<td class="regNotResetVal">0x00000010</td>
+ <td>SPI0_C2 register, peripheral SPI0.</td></tr>
+<tr><td>0x40076002</td><td>SPI0_BR</td>
+<td class="regNotResetVal">0x00000001</td>
+ <td>SPI0_BR register, peripheral SPI0.</td></tr>
+<tr><td>0x40076007</td><td>SPI0_M</td>
+<td class="regResetVal">0x00000000</td>
+ <td>SPI0_M register, peripheral SPI0.</td></tr>
+</table>
+Color Denotes Reset Value
+<br/>
+\page SPI0_regs_details Register Initialization Details
+This page contains detailed description of initialization values for the 
+registers of the peripheral(s) configured by the component. 
+
+<div class="reghdr1">SIM_SCGC4</div>
+<div class="regdiag">
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>31</td><td>30</td><td>29</td><td>28</td><td>27</td><td>26</td><td>25</td><td>24</td><td>23</td>
+<td>22</td><td>21</td><td>20</td><td>19</td><td>18</td><td>17</td><td>16</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">SPI1</td>
+<td colspan="1" rowspan="2">SPI0</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">CMP</td><td colspan="1" rowspan="2">USBOTG</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>15</td><td>14</td><td>13</td><td>12</td><td>11</td><td>10</td><td>9</td><td>8</td><td>7</td>
+<td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>0</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">UART2</td><td colspan="1" rowspan="2">UART1</td><td colspan="1" rowspan="2">UART0</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">I2C1</td>
+<td colspan="1" rowspan="2">I2C0</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+        
+</div>
+<table class="regtbl2"><tr><td class="trowtit" colspan="2">Address</td><td colspan="2">0x40048034</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0xF0440030</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">After-reset value</td><td colspan="2">0xF0000030</td></tr>
+<tr><td class="ttitle2">Bit</td><td class="ttitle2">Field</td><td class="ttitle2">Value</td><td class="ttitle2">Description</td></tr>
+<tr><td>23</td><td>SPI1</td><td>0x00</td><td>SPI1 Clock Gate Control</td>
+<tr><td>22</td><td>SPI0</td><td>0x01</td><td>SPI0 Clock Gate Control</td>
+<tr><td>19</td><td>CMP</td><td>0x00</td><td>Comparator Clock Gate Control</td>
+<tr><td>18</td><td>USBOTG</td><td>0x01</td><td>USB Clock Gate Control</td>
+<tr><td>12</td><td>UART2</td><td>0x00</td><td>UART2 Clock Gate Control</td>
+<tr><td>11</td><td>UART1</td><td>0x00</td><td>UART1 Clock Gate Control</td>
+<tr><td>10</td><td>UART0</td><td>0x00</td><td>UART0 Clock Gate Control</td>
+<tr><td>7</td><td>I2C1</td><td>0x00</td><td>I2C1 Clock Gate Control</td>
+<tr><td>6</td><td>I2C0</td><td>0x00</td><td>I2C0 Clock Gate Control</td>
+</tr></table>
+<div class="reghdr1">SPI0_C1</div>
+<div class="regdiag">
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>7</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>0</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="1" rowspan="2">SPIE</td><td colspan="1" rowspan="2">SPE</td>
+<td colspan="1" rowspan="2">SPTIE</td><td colspan="1" rowspan="2">MSTR</td><td colspan="1" rowspan="2">CPOL</td>
+<td colspan="1" rowspan="2">CPHA</td><td colspan="1" rowspan="2">SSOE</td><td colspan="1" rowspan="2">LSBFE</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td>
+</tr>
+</table>
+        
+</div>
+<table class="regtbl2"><tr><td class="trowtit" colspan="2">Address</td><td colspan="2">0x40076000</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x0000005E</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">After-reset value</td><td colspan="2">0x00000004</td></tr>
+<tr><td class="ttitle2">Bit</td><td class="ttitle2">Field</td><td class="ttitle2">Value</td><td class="ttitle2">Description</td></tr>
+<tr><td>7</td><td>SPIE</td><td>0x00</td><td>SPI interrupt enable: for SPRF and MODF</td>
+<tr><td>6</td><td>SPE</td><td>0x01</td><td>SPI system enable</td>
+<tr><td>5</td><td>SPTIE</td><td>0x00</td><td>SPI transmit interrupt enable</td>
+<tr><td>4</td><td>MSTR</td><td>0x01</td><td>Master/slave mode select</td>
+<tr><td>3</td><td>CPOL</td><td>0x01</td><td>Clock polarity</td>
+<tr><td>2</td><td>CPHA</td><td>0x01</td><td>Clock phase</td>
+<tr><td>1</td><td>SSOE</td><td>0x01</td><td>Slave select output enable</td>
+<tr><td>0</td><td>LSBFE</td><td>0x00</td><td>LSB first (shifter direction)</td>
+</tr></table>
+<div class="reghdr1">SPI0_C2</div>
+<div class="regdiag">
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>7</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>0</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="1" rowspan="2">SPMIE</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">TXDMAE</td><td colspan="1" rowspan="2">MODFEN</td><td colspan="1" rowspan="2">BIDIROE</td>
+<td colspan="1" rowspan="2">RXDMAE</td><td colspan="1" rowspan="2">SPISWAI</td><td colspan="1" rowspan="2">SPC0</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+        
+</div>
+<table class="regtbl2"><tr><td class="trowtit" colspan="2">Address</td><td colspan="2">0x40076001</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x00000010</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">After-reset value</td><td colspan="2">0x00000000</td></tr>
+<tr><td class="ttitle2">Bit</td><td class="ttitle2">Field</td><td class="ttitle2">Value</td><td class="ttitle2">Description</td></tr>
+<tr><td>7</td><td>SPMIE</td><td>0x00</td><td>SPI match interrupt enable</td>
+<tr><td>5</td><td>TXDMAE</td><td>0x00</td><td>Transmit DMA enable</td>
+<tr><td>4</td><td>MODFEN</td><td>0x01</td><td>Master mode-fault function enable</td>
+<tr><td>3</td><td>BIDIROE</td><td>0x00</td><td>Bidirectional mode output enable</td>
+<tr><td>2</td><td>RXDMAE</td><td>0x00</td><td>Receive DMA enable</td>
+<tr><td>1</td><td>SPISWAI</td><td>0x00</td><td>SPI stop in wait mode</td>
+<tr><td>0</td><td>SPC0</td><td>0x00</td><td>SPI pin control 0</td>
+</tr></table>
+<div class="reghdr1">SPI0_BR</div>
+<div class="regdiag">
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>7</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>0</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="1" rowspan="2">-</td><td colspan="3" rowspan="2">SPPR</td>
+<td colspan="4" rowspan="2">SPR</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+        
+</div>
+<table class="regtbl2"><tr><td class="trowtit" colspan="2">Address</td><td colspan="2">0x40076002</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x00000001</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">After-reset value</td><td colspan="2">0x00000000</td></tr>
+<tr><td class="ttitle2">Bit</td><td class="ttitle2">Field</td><td class="ttitle2">Value</td><td class="ttitle2">Description</td></tr>
+<tr><td>4 - 6</td><td>SPPR</td><td>0x00</td><td>SPI baud rate prescale divisor</td>
+<tr><td>0 - 3</td><td>SPR</td><td>0x00</td><td>SPI baud rate divisor</td>
+</tr></table>
+<div class="reghdr1">SPI0_M</div>
+<div class="regdiag">
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>7</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>0</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="8" rowspan="2">Bits</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+        
+</div>
+<table class="regtbl2"><tr><td class="trowtit" colspan="2">Address</td><td colspan="2">0x40076007</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x00000000</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">After-reset value</td><td colspan="2">0x00000000</td></tr>
+<tr><td class="ttitle2">Bit</td><td class="ttitle2">Field</td><td class="ttitle2">Value</td><td class="ttitle2">Description</td></tr>
+<tr><td>0 - 7</td><td>Bits</td><td>0x00</td><td>Hardware compare value (low byte)</td>
+</tr></table>
+*/
+/*!
+\page SPI0_settings Component Settings
+\code
+**          Component name                                 : SPI0
+**          Device                                         : SPI0
+**          Settings                                       : 
+**            Clock gate                                   : Enabled
+**            Clock setting                                : 
+**              Baud rate prescaler                        : divide by 1
+**              Baud rate divisor                          : divide by 4
+**              SCK frequency                              : 6 MHz
+**            Mode Select                                  : Master
+**            Clock polarity                               : Active-low
+**            Clock phase                                  : Second edge
+**            Data shift order                             : MSB first
+**            Bidirectional mode                           : Disabled
+**            Output enable in bidirect. mode              : no
+**            SS pin function                              : Automatic Slave Select output
+**            Match value                                  : 0
+**            Stop in wait mode                            : Disabled
+**          Pins                                           : 
+**            SCK pin allocation                           : Enabled
+**              SCK pin                                    : ADC0_SE5b/PTD1/SPI0_SCK/TPM0_CH1
+**              SCK pin signal                             : 
+**            MISO pin allocation                          : Enabled
+**              MISO pin                                   : PTD3/SPI0_MISO/UART2_TX/TPM0_CH3/SPI0_MOSI
+**              MISO pin signal                            : 
+**            MOSI pin allocation                          : Enabled
+**              MOSI pin                                   : PTD2/SPI0_MOSI/UART2_RX/TPM0_CH2/SPI0_MISO
+**              MOSI pin signal                            : 
+**            SS pin allocation                            : Disabled
+**          Interrupts/DMA                                 : 
+**            SPI interrupt/DMA                            : 
+**              Interrupt                                  : INT_SPI0
+**              Interrupt request                          : Disabled
+**              Interrupt priority                         : 0 (Highest)
+**              ISR Name                                   : 
+**              Receive and fault interrupt                : Disabled
+**              Receive DMA                                : Disabled
+**              Transmit interrupt                         : Disabled
+**              Transmit DMA                               : Disabled
+**              Match interrupt                            : Disabled
+**          Initialization                                 : 
+**            Module enable                                : yes
+**            Call Init method                             : yes
+<h1>
+\endcode
+*/

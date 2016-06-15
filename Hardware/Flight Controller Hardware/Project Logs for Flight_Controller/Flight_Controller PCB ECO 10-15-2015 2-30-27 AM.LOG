@@ -1,0 +1,48 @@
+Removed Pin From Net: NetName=GND Pin=C96-1
+Removed Pin From Net: NetName=VP1 Pin=C96-2
+Removed Pin From Net: NetName=GND Pin=C97-1
+Removed Pin From Net: NetName=3.3V Pin=C97-2
+Removed Pin From Net: NetName=GND Pin=C98-1
+Removed Pin From Net: NetName=3.3V Pin=C98-2
+Removed Pin From Net: NetName=GND Pin=C99-1
+Removed Pin From Net: NetName=VP1 Pin=D1-2
+Removed Pin From Net: NetName=GND Pin=D14-1
+Removed Pin From Net: NetName=3.3V Pin=L10-2
+Removed Pin From Net: NetName=VP1 Pin=P7-3
+Removed Pin From Net: NetName=3.3V Pin=R123-1
+Removed Pin From Net: NetName=VP1 Pin=R124-2
+Removed Pin From Net: NetName=GND Pin=R125-2
+Removed Pin From Net: NetName=GND Pin=U11-2
+Removed Pin From Net: NetName=VP1 Pin=U11-5
+Removed Member From Class: ClassName=Flight_Controller2 Member=C93
+Removed Member From Class: ClassName=Flight_Controller2 Member=C96
+Removed Member From Class: ClassName=Flight_Controller2 Member=C97
+Removed Member From Class: ClassName=Flight_Controller2 Member=C98
+Removed Member From Class: ClassName=Flight_Controller2 Member=C99
+Removed Member From Class: ClassName=Flight_Controller2 Member=D14
+Removed Member From Class: ClassName=Flight_Controller2 Member=L10
+Removed Member From Class: ClassName=Flight_Controller2 Member=R123
+Removed Member From Class: ClassName=Flight_Controller2 Member=R124
+Removed Member From Class: ClassName=Flight_Controller2 Member=R125
+Removed Member From Class: ClassName=Flight_Controller2 Member=U11
+Change Component DesignItemId : Designator=D1 Old DesignItemId=D Schottky New DesignItemId=Bat45C
+Change Component Footprint: Designator=D1 Old Footprint=DO-214AC1 New Footprint=SOT-23B_N
+Change Component Comment : Designator=D1 Old Comment=SK34A-TP New Comment=Bat45C
+Change Component Designator: OldDesignator=P? NewDesignator=P10
+Added Component: Designator=C25(6-0805_MC)
+Added Component: Designator=C26(6-0805_MC)
+Added Component: Designator=V1(SOT-23B_M)
+Added Pin To Net: NetName=GND Pin=C25-1
+Added Pin To Net: NetName=VP1 Pin=C25-2
+Added Pin To Net: NetName=GND Pin=C26-1
+Added Pin To Net: NetName=3.3V Pin=C26-2
+Added Pin To Net: NetName=5V Pin=D1-2
+Added Pin To Net: NetName=VP1 Pin=D1-3
+Added Pin To Net: NetName=NetC24_2 Pin=P7-3
+Added Pin To Net: NetName=GND Pin=V1-1
+Added Pin To Net: NetName=3.3V Pin=V1-2
+Added Pin To Net: NetName=VP1 Pin=V1-3
+Change Net Name : Old Net Name=NetC24_2 New Net Name=VBAT
+Added Member To Class: ClassName=Flight_Controller2 Member=Component C25 GRM21BC81C106KE15L
+Added Member To Class: ClassName=Flight_Controller2 Member=Component C26 GRM21BC81C106KE15L
+Added Member To Class: ClassName=Flight_Controller2 Member=Component V1 MCP1702T-5002E/CB

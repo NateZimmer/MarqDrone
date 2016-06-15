@@ -1,0 +1,38 @@
+Removed Pin From Net: NetName=3.3V Pin=C12-2
+Removed Pin From Net: NetName=3.3V Pin=C13-2
+Removed Pin From Net: NetName=3.3V Pin=C14-2
+Removed Pin From Net: NetName=3.3V Pin=C15-2
+Removed Pin From Net: NetName=3.3V Pin=C17-2
+Removed Pin From Net: NetName=3.3V Pin=C22-2
+Removed Pin From Net: NetName=3.3V Pin=R3-2
+Removed Pin From Net: NetName=3.3V Pin=R96-1
+Removed Pin From Net: NetName=3.3V Pin=U4-4
+Removed Pin From Net: NetName=3.3V Pin=U4-9
+Removed Pin From Net: NetName=3.3V Pin=U4-11
+Removed Pin From Net: NetName=3.3V Pin=U4-14
+Removed Pin From Net: NetName=3.3V Pin=U4-15
+Removed Pin From Net: NetName=3.3V Pin=U4-18
+Removed Member From Class: ClassName=Flight_Controller3 Member=R96
+Added Component: Designator=C10(1608[0603]C)
+Added Component: Designator=L2(1608[0603]L)
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=3.3V Pin=L2-1
+Added Pin To Net: NetName=3.3V Pin=P2-1
+Added Pin To Net: NetName=3V3CC Pin=C10-2
+Added Pin To Net: NetName=3V3CC Pin=C12-2
+Added Pin To Net: NetName=3V3CC Pin=C13-2
+Added Pin To Net: NetName=3V3CC Pin=C14-2
+Added Pin To Net: NetName=3V3CC Pin=C15-2
+Added Pin To Net: NetName=3V3CC Pin=C17-2
+Added Pin To Net: NetName=3V3CC Pin=C22-2
+Added Pin To Net: NetName=3V3CC Pin=L2-2
+Added Pin To Net: NetName=3V3CC Pin=R3-2
+Added Pin To Net: NetName=3V3CC Pin=U4-4
+Added Pin To Net: NetName=3V3CC Pin=U4-9
+Added Pin To Net: NetName=3V3CC Pin=U4-11
+Added Pin To Net: NetName=3V3CC Pin=U4-14
+Added Pin To Net: NetName=3V3CC Pin=U4-15
+Added Pin To Net: NetName=3V3CC Pin=U4-18
+Added Net: Name=3V3CC
+Added Member To Class: ClassName=Flight_Controller2 Member=Component C10 CL10B104MB8NNNC
+Added Member To Class: ClassName=Flight_Controller2 Member=Component L2 CIM10U800NC

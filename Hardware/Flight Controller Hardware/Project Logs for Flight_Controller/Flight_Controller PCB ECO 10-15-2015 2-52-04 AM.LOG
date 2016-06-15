@@ -1,0 +1,31 @@
+Removed Pin From Net: NetName=GND Pin=P1-1
+Removed Pin From Net: NetName=VBAT Pin=P1-2
+Removed Pin From Net: NetName=VBAT Pin=P1-2
+Removed Pin From Net: NetName=VBAT Pin=P1-2
+Removed Pin From Net: NetName=VBAT Pin=P1-2
+Removed Pin From Net: NetName=SCL Pin=R14-1
+Removed Pin From Net: NetName=NetP5_3 Pin=R14-2
+Removed Pin From Net: NetName=SCL Pin=R16-1
+Change Component Designator: OldDesignator=R3 NewDesignator=R26
+Added Component: Designator=P9(1934861_2_screw)
+Added Component: Designator=R24(1608[0603]R)
+Added Component: Designator=R25(1608[0603]R)
+Added Pin To Net: NetName=SMA_IN Pin=P1-1
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P1-1
+Added Pin To Net: NetName=VBAT Pin=P1-2
+Added Pin To Net: NetName=VBAT Pin=P1-2
+Added Pin To Net: NetName=VBAT Pin=P1-2
+Added Pin To Net: NetName=VBAT Pin=P1-2
+Added Pin To Net: NetName=SMA_IN Pin=R14-1
+Added Pin To Net: NetName=NetC10_2 Pin=R14-2
+Added Pin To Net: NetName=GND Pin=R16-1
+Added Pin To Net: NetName=SCL Pin=R14-1
+Added Pin To Net: NetName=NetP5_3 Pin=R14-2
+Added Pin To Net: NetName=SCL Pin=R16-1
+Added Pin To Net: NetName=NetP6_3 Pin=R16-2
+Added Member To Class: ClassName=Flight_Controller2 Member=Component C22 CL10B104MB8NNNC
+Added Member To Class: ClassName=Flight_Controller2 Member=Component C26 CL05C180JB5NNNC

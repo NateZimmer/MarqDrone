@@ -1,0 +1,21 @@
+-mcpu=cortex-m0
+-mthumb
+-mfloat-abi=soft
+-g3
+-gdwarf-2
+-gstrict-dwarf
+-I"C:/Users/Z/Desktop/1MarquetteFIles/ESC_Code/ESC_Code/Project_Headers"
+-I"C:/Users/Z/Desktop/1MarquetteFIles/ESC_Code/ESC_Code/Project_Settings/Startup_Code"
+-I"C:/Freescale/CW MCU v10.5/MCU/ARM_GCC_Support/ewl/EWL_C/include"
+-I"C:/Freescale/CW MCU v10.5/MCU/ARM_GCC_Support/ewl/EWL_Runtime/include"
+-I"C:/Users/Z/Desktop/1MarquetteFIles/ESC_Code/ESC_Code/Generated_Code"
+-I"C:/Users/Z/Desktop/1MarquetteFIles/ESC_Code/ESC_Code/Sources"
+-I"C:/Freescale/CW MCU v10.5/MCU/ProcessorExpert/lib/Kinetis/pdd/inc"
+-I"C:/Freescale/CW MCU v10.5/MCU/ProcessorExpert/lib/Kinetis/iofiles"
+-O0
+-ffunction-sections
+-fdata-sections
+-Wall
+-c
+-fmessage-length=0
+-specs=ewl_c.specs

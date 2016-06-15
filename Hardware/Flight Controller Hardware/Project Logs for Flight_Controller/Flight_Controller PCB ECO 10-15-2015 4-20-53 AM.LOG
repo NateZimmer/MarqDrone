@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=GND Pin=P9-1
+Removed Pin From Net: NetName=VBAT Pin=P9-2
+Removed Member From Class: ClassName=Flight_Controller2 Member=P9
+Removed Member From Class: ClassName=Flight_Controller2 Member=P10

@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=SDA Pin=JP3-1
+Removed Pin From Net: NetName=SDA Pin=JP5-1
+Removed Pin From Net: NetName=SDA Pin=JP11-1
+Removed Pin From Net: NetName=SDA Pin=JP14-1
+Removed Pin From Net: NetName=SDA Pin=R4-1
+Removed Pin From Net: NetName=SDA Pin=U1-1
+Removed Member From Class: ClassName=Flight_Controller2 Member=JP2
+Removed Member From Class: ClassName=Flight_Controller2 Member=JP3
+Removed Member From Class: ClassName=Flight_Controller2 Member=JP5
+Removed Member From Class: ClassName=Flight_Controller2 Member=JP9
+Removed Member From Class: ClassName=Flight_Controller2 Member=JP10
+Removed Member From Class: ClassName=Flight_Controller2 Member=JP11
+Removed Member From Class: ClassName=Flight_Controller2 Member=JP13
+Removed Member From Class: ClassName=Flight_Controller2 Member=JP14
+Removed Member From Class: ClassName=Flight_Controller2 Member=JP17
+Added Component: Designator=R5(1608[0603]R)
+Added Pin To Net: NetName=SDA Pin=P3-2
+Added Pin To Net: NetName=SDA Pin=P4-2
+Added Pin To Net: NetName=SDA Pin=P5-2
+Added Pin To Net: NetName=SDA Pin=P6-2
+Added Pin To Net: NetName=SDA Pin=R5-2
+Added Pin To Net: NetName=NetR4_1 Pin=R4-1
+Added Pin To Net: NetName=NetR4_1 Pin=R5-1
+Added Pin To Net: NetName=NetR4_1 Pin=U1-1
+Added Net: Name=NetR4_1
+Added Member To Class: ClassName=Flight_Controller3 Member=Component R5 MCR03EZPFX1003

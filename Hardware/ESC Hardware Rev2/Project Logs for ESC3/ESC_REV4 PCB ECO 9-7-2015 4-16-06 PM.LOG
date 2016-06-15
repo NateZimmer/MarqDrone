@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=LED Pin=U2-49
+Added Component: Designator=C8(6-0805_MC)
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=VP1 Pin=C8-2
+Added Pin To Net: NetName=LED Pin=U2-63
+Added Member To Class: ClassName=ESC3 Member=Component C8 Cap

@@ -1,0 +1,27 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: RF_Controller.PcbDoc   10/4/2015  6:05:10 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : RF_Controller.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        13mil (0.3302mm)         Round          3                0.11 Inch (2.90 mm)
+T2        14mil (0.3556mm)         Round          331              80.41 Inch (2042.46 mm)
+T3        15mil (0.381mm)          Round          1                0.00 Inch (0.00 mm)
+T4        23.6mil (0.59944mm)      Round          10               0.45 Inch (11.43 mm)
+T5        28mil (0.7112mm)         Round          2                0.35 Inch (8.76 mm)
+T6        31.5mil (0.8001mm)       Round          24               3.63 Inch (92.17 mm)
+T7        35.4mil (0.89916mm)      Round          2                0.30 Inch (7.62 mm)
+T8        43.3mil (1.09982mm)      Round          24               7.20 Inch (183.00 mm)
+T9        51.2mil (1.30048mm)      Round          2                1.25 Inch (31.70 mm)
+T10       59.1mil (1.50114mm)      Round          1                0.00 Inch (0.00 mm)
+T11       63mil (1.6002mm)         Round          4                0.60 Inch (15.24 mm)
+T12       94.5mil (2.4003mm)       Round          1                0.00 Inch (0.00 mm)
+T13       137.8mil (3.50012mm)     Round          8                18.55 Inch (471.19 mm)
+T14       60mil (1.524mm)          Round          2         NPTH   0.17 Inch (4.37 mm)
+---------------------------------------------------------------------------
+Totals                                            415              113.03 Inch (2870.84 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

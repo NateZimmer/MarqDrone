@@ -1,0 +1,215 @@
+html {
+  height:100%;
+}
+
+
+head{
+	padding:0pt;
+	margin:0pt;	
+	display:none;
+	border: 0px none;
+}
+
+body{
+	background-color:#efefef;
+	font-family:verdana; 
+	font-size: 12px;
+	overflow-y:scroll;
+	padding:0pt;
+	margin:0pt;
+	border:0px;
+	height:100%
+}
+
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4em;
+}
+.footer, .push {
+height: 4em;
+clear:both;
+width:100%;
+color:#FFF;
+}
+
+.footer{
+	background-color:#333;
+}
+
+#footerText{
+	padding-top:1em;
+	font-family: "lft-etica",sans-serif;
+	font-size:12px;
+	font-weight:400;
+}
+
+
+a:link
+{
+	color:#FFF;
+}
+
+a:visited
+{
+	color:#FFF;
+}
+
+footer
+{
+	padding:0pt;
+	float:bottom;
+	margin:0pt;
+}
+
+#Banner
+{
+	margin:0px;
+	padding:0px;
+	background-color:#333;
+	height:80px;
+	color:#FFF;
+	font-size:26px;
+	line-height:80px;
+	background: linear-gradient(#666, #000); 
+}
+
+#BannerT
+{
+	padding-left:10pt;
+	text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.3); 
+	font-style:italic;
+	font-family: "lft-etica",sans-serif;
+	font-weight:600;
+	text-transform: uppercase;
+	border: medium none;
+}
+
+#Navs{
+	background-color:#5c5c5c;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	color:white;
+	height:40px;
+	line-height:40px;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12) !important;
+}
+
+.containerBox
+{
+	margin:5pt;
+	float:left;
+	height:auto;
+	background-color:#DDD;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+	width:auto;
+	display:block;
+	font-family: "lft-etica",sans-serif;
+	border-style: solid;
+    border-width: 1px;
+	border-color: #EEE;
+	font-size: 12px;
+	font-weight:600;
+	min-width:410px;
+}
+
+.MyButton{
+	float: left;
+	font-family: "lft-etica",sans-serif;
+    font-size: 12px;
+    background-color: #555;
+    color: #FFF;
+    border: 1px solid #555;
+    padding: 0px 12px;
+	height: 24px;
+    width: auto;
+    cursor: pointer;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+	font-weight:600;
+	margin: 5px;
+}
+
+.NavButton{
+	float: left;
+	font-family: "lft-etica",sans-serif;
+    font-size: 12px;
+    background-color: #555;
+    color: #FFF;
+    border: 0px solid #555;
+	height: 40px;
+    width: auto;
+    cursor: pointer;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+	font-weight: 600;
+}
+
+.NavButton:Hover{
+	background-color: #FFF;
+	color: #000;
+}
+
+#textBox{
+	float: left;
+	font-family:tahoma; 
+    font-size: 12px;
+    border: 0px solid #555;
+    padding: 0px 12px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+	margin: 5px;
+	height:100px;
+	width:300px;
+}
+
+#baudRates{
+	width:60px;
+	line-height:24px;
+	font-size: 12px;
+	height:24px;
+	resize:none;
+}
+
+.MyButton:Hover{
+	background-color: #FFF;
+	color: #000;
+}
+
+#mySliders
+{
+	text-align:center;
+}
+
+input{
+	text-align:center;
+}
+
+p {
+	margin:0px;
+	padding:0px;
+}
+
+.myPlots{
+	width:400px;
+	height:230px;
+	margin: auto;
+	background-color:#FFF;
+	margin:10px;
+}
+
+.flotr-legend {
+    padding: 2px;
+    left: 31px;
+    top: 20px;
+    border: 0;
+    
+    background-color: white;
+}
+  
+#serialComs{display:none;}
+/* #FullCube{display:none;} */
+#jPractice{display:none;}  
+#AccCube{display:none;}
+#GyroCube{display:none;}
+#MagCube{display:none;}
+

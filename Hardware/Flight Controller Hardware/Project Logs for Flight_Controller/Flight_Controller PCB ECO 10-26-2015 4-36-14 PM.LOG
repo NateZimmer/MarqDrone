@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=NetJP4_2 Pin=P3-3
+Removed Pin From Net: NetName=NetJP6_2 Pin=P4-3
+Removed Pin From Net: NetName=NetJP1_2 Pin=P5-3
+Removed Pin From Net: NetName=NetJP15_2 Pin=P6-3
+Added Component: Designator=P10(HDR2X3_3D2)
+Added Pin To Net: NetName=NetJP6_2 Pin=P9-1
+Added Pin To Net: NetName=NetJP4_2 Pin=P9-2
+Added Pin To Net: NetName=SDA Pin=P9-3
+Added Pin To Net: NetName=SDA Pin=P9-4
+Added Pin To Net: NetName=GND Pin=P9-5
+Added Pin To Net: NetName=GND Pin=P9-6
+Added Pin To Net: NetName=NetJP1_2 Pin=P10-1
+Added Pin To Net: NetName=NetJP15_2 Pin=P10-2
+Added Pin To Net: NetName=SDA Pin=P10-3
+Added Pin To Net: NetName=SDA Pin=P10-4
+Added Pin To Net: NetName=GND Pin=P10-5
+Added Pin To Net: NetName=GND Pin=P10-6
+Added Member To Class: ClassName=Flight_Controller2 Member=Component P10 Header 3X2
